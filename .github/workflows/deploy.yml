@@ -26,4 +26,8 @@ jobs:
       - name: Build
         run: pnpm run build
       - name: Deploy
-        run: pnpm run deploy
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/sebald/reservix-tech-radar.git
+          pnpm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
