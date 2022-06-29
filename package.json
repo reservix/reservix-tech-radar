@@ -1,0 +1,15 @@
+{
+  "name": "reservix-tech-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reservix' tech radar, inspired by http://thoughtworks.com/radar/",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@marigold/prettier-config": "^0.3.0",
+    "parcel": "latest"
+  }
+}
