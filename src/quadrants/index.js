@@ -1,5 +1,5 @@
 import * as codingFrameworks from './coding-frameworks';
-import * as monitoringLoggingSecurity from './monitoring-logging-security';
+import * as apiIpcs from './api-ipc';
 import * as cicdInfrastructureAutomation from './cicd-infrastructure-automation';
 import * as platformServices from './platform-services';
 
@@ -14,14 +14,14 @@ import * as platformServices from './platform-services';
  */
 export const quadrants = [
   codingFrameworks,
-  monitoringLoggingSecurity,
+  apiIpcs,
   cicdInfrastructureAutomation,
   platformServices,
 ].sort((a, b) => a.quadrant - b.quadrant);
 
 export const entries = [
   ...codingFrameworks.entries,
-  ...monitoringLoggingSecurity.entries,
+  ...apiIpcs.entries,
   ...cicdInfrastructureAutomation.entries,
   ...platformServices.entries,
 ];

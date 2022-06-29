@@ -77,4 +77,20 @@ export const entries = [
     active: true,
     moved: 0,
   },
+  {
+    label: 'LESS',
+    link: 'https://lesscss.org/',
+    quadrant,
+    ring: onHold,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'Marigold',
+    link: 'https://marigold-ui.io/',
+    quadrant,
+    ring: trial,
+    active: true,
+    moved: 0,
+  },
 ];

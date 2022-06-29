@@ -44,8 +44,13 @@ p {
 #radar {
   /* Makes the radar responsive */
   width: 100%;
-  /* Magic number ... */
-  transform: translateX(-60px);
+}
+
+@media screen and (min-width: 1000px) {
+  #radar {
+    /* Magic number ... */
+    transform: translateX(-60px);
+  }
 }
 
 .columns {
