@@ -537,7 +537,7 @@ var _quadrants = require("./quadrants");
 radar_visualization({
     svg_id: "radar",
     title: "Reservix Tech Radar \u2014 2022 Q3",
-    width: 1400,
+    width: 1500,
     height: 1000,
     colors: {
         background: "#fff",
@@ -739,9 +739,18 @@ parcelHelpers.export(exports, "name", ()=>name);
 parcelHelpers.export(exports, "entries", ()=>entries);
 var _rings = require("../rings");
 const { adopt , trial , assess , onHold  } = (0, _rings.ringMap);
-const quadrant = 1;
+const quadrant = 3;
 const name = "CI/CD, Infrastructure & Automation";
-const entries = [];
+const entries = [
+    {
+        label: "Docker",
+        link: "https://www.docker.com/",
+        quadrant,
+        ring: adopt,
+        active: true,
+        moved: 0
+    }, 
+];
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"7TKJq","../rings":"2ltLH"}],"ajJa6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -751,7 +760,7 @@ parcelHelpers.export(exports, "name", ()=>name);
 parcelHelpers.export(exports, "entries", ()=>entries);
 var _rings = require("../rings");
 const { adopt , trial , assess , onHold  } = (0, _rings.ringMap);
-const quadrant = 3;
+const quadrant = 1;
 const name = "Platform & Services";
 const entries = [
     {
