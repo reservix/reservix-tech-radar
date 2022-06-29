@@ -22,4 +22,12 @@ export const entries = [
     active: true,
     moved: 0,
   },
+  {
+    label: 'Kibana',
+    link: 'https://www.elastic.co/kibana/',
+    quadrant,
+    ring: adopt,
+    active: true,
+    moved: 0,
+  },
 ];

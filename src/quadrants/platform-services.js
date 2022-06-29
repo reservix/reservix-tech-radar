@@ -46,4 +46,20 @@ export const entries = [
     active: true,
     moved: 0,
   },
+  {
+    label: 'HTTP/REST',
+    link: 'https://en.wikipedia.org/wiki/Representational_state_transfer',
+    quadrant,
+    ring: adopt,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'GraphQL',
+    link: 'https://graphql.org/',
+    quadrant,
+    ring: assess,
+    active: true,
+    moved: 0,
+  },
 ];
