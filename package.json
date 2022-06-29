@@ -6,10 +6,12 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "@marigold/prettier-config": "^0.3.0",
-    "parcel": "latest"
+    "@marigold/prettier-config": "0.3.0",
+    "gh-pages": "4.0.0",
+    "parcel": "2.6.2"
   }
 }
