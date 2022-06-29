@@ -42,7 +42,10 @@ p {
 }
 
 #radar {
-  margin: 0 auto;
+  /* Makes the radar responsive */
+  width: 100%;
+  /* Magic number ... */
+  transform: translateX(-60px);
 }
 
 .columns {
