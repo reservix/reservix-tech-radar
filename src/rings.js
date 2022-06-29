@@ -1,3 +1,7 @@
+/**
+ * We'll use the "id" to make it easier to assign
+ * items to a certain ring.
+ */
 export const rings = [
   {
     id: 'adopt',
@@ -24,7 +28,6 @@ export const rings = [
   },
 ];
 
-// Makes it easier to assign stuff when configuring the quadrants
 /** @type {{adopt: 0, trial: 1, assess: 2, onHold: 3}} */
 export const ringMap = rings.reduce((obj, ring, idx) => {
   obj[ring.id] = idx;
