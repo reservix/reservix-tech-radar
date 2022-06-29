@@ -4,7 +4,7 @@ import { quadrants, entries } from './quadrants';
 radar_visualization({
   svg_id: 'radar',
   title: 'Reservix Tech Radar — 2022 Q3',
-  width: 1400,
+  width: 1500,
   height: 1000,
   colors: {
     background: '#fff',
