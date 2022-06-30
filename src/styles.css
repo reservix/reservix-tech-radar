@@ -41,6 +41,10 @@ p {
   margin-block: var(--size-fluid-1) var(--size-fluid-3);
 }
 
+/* =================== */
+/*        Radar        */
+/* =================== */
+
 #radar {
   /* Makes the radar responsive */
   width: 100%;
@@ -52,6 +56,61 @@ p {
     transform: translateX(-60px);
   }
 }
+
+/* =================== */
+/*        Dialog       */
+/* =================== */
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+dialog {
+  margin: auto;
+  padding: var(--size-fluid-1);
+  position: fixed;
+  inset: 0;
+  z-index: var(--layer-important);
+  width: min(100% - 3rem, var(--size-content-3, 60ch));
+  border-radius: var(--radius-2);
+  border: var(--border-size-2) solid var(--gray-7);
+}
+
+dialog header {
+  display: flex;
+  gap: var(--size-fluid-2);
+}
+
+dialog h4 {
+  flex-grow: 1;
+  font-size: var(--font-size-fluid-2);
+  line-height: var(--font-lineheight-0);
+}
+
+dialog button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--size-7);
+  width: var(--size-7);
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-4);
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background: var(--gray-3);
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(25px);
+}
+
+/* =================== */
+/*        Layout       */
+/* =================== */
 
 .columns {
   display: flex;

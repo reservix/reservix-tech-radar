@@ -8,7 +8,6 @@ export const name = 'Platform & Services';
 export const entries = [
   {
     label: 'MySQL',
-    link: 'https://www.mysql.com/',
     quadrant,
     ring: adopt,
     active: true,
@@ -16,7 +15,6 @@ export const entries = [
   },
   {
     label: 'PostgreSQL',
-    link: 'https://www.postgresql.org/',
     quadrant,
     ring: trial,
     active: true,
@@ -24,7 +22,6 @@ export const entries = [
   },
   {
     label: 'Elasticsearch',
-    link: 'https://www.elastic.co/',
     quadrant,
     ring: adopt,
     active: true,
@@ -32,7 +29,6 @@ export const entries = [
   },
   {
     label: 'Redis',
-    link: 'https://redis.com/',
     quadrant,
     ring: adopt,
     active: true,
@@ -40,7 +36,6 @@ export const entries = [
   },
   {
     label: 'MongoDB',
-    link: 'https://www.mongodb.com/',
     quadrant,
     ring: adopt,
     active: true,
@@ -48,7 +43,6 @@ export const entries = [
   },
   {
     label: 'DynamoDB',
-    link: 'https://aws.amazon.com/dynamodb/',
     quadrant,
     ring: assess,
     active: true,
@@ -56,9 +50,44 @@ export const entries = [
   },
   {
     label: 'AWS Lambda',
-    link: 'https://aws.amazon.com/lambda/',
     quadrant,
     ring: adopt,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'SQS',
+    quadrant,
+    ring: adopt,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'SNS',
+    quadrant,
+    ring: adopt,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'Keycloak',
+
+    quadrant,
+    ring: adopt,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'Kubernetes',
+    quadrant,
+    ring: trial,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'Helm',
+    quadrant,
+    ring: trial,
     active: true,
     moved: 0,
   },

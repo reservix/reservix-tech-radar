@@ -6,25 +6,25 @@ export const rings = [
   {
     id: 'adopt',
     name: 'Adopt',
-    color: '#40c057',
+    color: '#74b816',
   },
 
   {
     id: 'trial',
     name: 'Trial',
-    color: '#93d2c2',
+    color: '#228be6',
   },
 
   {
     id: 'assess',
     name: 'Assess',
-    color: '#228be6',
+    color: '#fab005',
   },
 
   {
     id: 'onHold',
     name: 'On Hold',
-    color: '#ffa8a8',
+    color: '#fa5252',
   },
 ];
 
