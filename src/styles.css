@@ -115,10 +115,6 @@ dialog button {
   cursor: pointer;
 }
 
-dialog button:hover {
-  background: var(--gray-3);
-}
-
 dialog article {
   color: var(--gray-7);
   line-height: var(--font-lineheight-4);
