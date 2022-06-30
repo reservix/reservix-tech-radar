@@ -78,4 +78,11 @@ export const entries = [
     active: true,
     moved: 0,
   },
+  {
+    label: 'jest',
+    quadrant,
+    ring: adopt,
+    active: true,
+    moved: 0,
+  },
 ];
