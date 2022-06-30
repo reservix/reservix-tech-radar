@@ -36,6 +36,9 @@ export const entries = [
   },
   {
     label: 'MongoDB',
+    description: [
+      `For problems that fit the document database model, <a href="https://www.mongodb.com/">MongoDB</a> is now the most popular choice. In addition to ease of use and a solid technical implementation, the community and ecosystem contributed to this success. We are aware of problems where teams were tempted by the popularity of MongoDB when a document database was not a good fit or they did not understand the inherent complexity. When used appropriately, however, MongoDB has proven itself on many projects.`,
+    ],
     quadrant,
     ring: adopt,
     active: true,

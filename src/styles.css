@@ -41,6 +41,16 @@ p {
   margin-block: var(--size-fluid-1) var(--size-fluid-3);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gray-5);
+}
+
+a:hover {
+  color: var(--gray-6);
+}
+
 /* =================== */
 /*        Radar        */
 /* =================== */
@@ -67,22 +77,27 @@ html:has(dialog[open]) {
 
 dialog {
   margin: auto;
-  padding: var(--size-fluid-1);
+  padding: var(--size-fluid-1) var(--size-fluid-2);
   position: fixed;
   inset: 0;
   z-index: var(--layer-important);
   width: min(100% - 3rem, var(--size-content-3, 60ch));
   border-radius: var(--radius-2);
   border: var(--border-size-2) solid var(--gray-7);
+  font-size: var(--font-size-2);
 }
 
 dialog header {
   display: flex;
   gap: var(--size-fluid-2);
+  margin-block-end: var(--size-5);
+}
+
+dialog header :first-child {
+  flex-grow: 1;
 }
 
 dialog h4 {
-  flex-grow: 1;
   font-size: var(--font-size-fluid-2);
   line-height: var(--font-lineheight-0);
 }
@@ -102,6 +117,12 @@ dialog button {
 
 dialog button:hover {
   background: var(--gray-3);
+}
+
+dialog article {
+  color: var(--gray-7);
+  line-height: var(--font-lineheight-4);
+  margin-block: var(--size-fluid-1) var(--size-fluid-2);
 }
 
 dialog::backdrop {
@@ -126,4 +147,18 @@ dialog::backdrop {
 .columns > :nth-last-child(n + 3),
 .columns > :nth-last-child(n + 3) ~ * {
   flex-basis: 100%;
+}
+
+/* =================== */
+/*        Badge        */
+/* =================== */
+
+.badge {
+  display: inline-block;
+  color: var(--gray-0);
+  font-size: var(--font-size-00);
+  font-weight: var(--font-weight-7);
+  text-transform: uppercase;
+  border-radius: var(--radius-2);
+  padding: var(--size-1) var(--size-3);
 }

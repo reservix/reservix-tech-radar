@@ -26,6 +26,7 @@ const radar = document.getElementById('radar');
 const dialog = document.getElementById('dialog');
 const dialogTitle = document.getElementById('dialog-title');
 const dialogContent = document.getElementById('dialog-content');
+const dialogBadge = document.getElementById('dialog-badge');
 
 /**
  * We have to find the entry based on the label text, which is
@@ -43,24 +44,28 @@ const isBlipLegend = el =>
   el.tagName === 'text' &&
   el.parentElement?.tagName === 'a';
 
-// document.addEventListener('click', e => {
-//   e.preventDefault();
+document.addEventListener('click', e => {
+  e.preventDefault();
 
-//   /** @type {Element} */
-//   const el = e.target;
+  /** @type {Element} */
+  const el = e.target;
 
-//   // Open Modal with info about the blip
-//   if (isBlipLegend(el)) {
-//     const entry = getEntryInfo(getEntryName(el));
-//     console.log(entry);
-//     dialogTitle.innerHTML = entry.label;
+  // Open Modal with info about the blip
+  if (isBlipLegend(el)) {
+    const entry = getEntryInfo(getEntryName(el));
 
-//     dialog.showModal();
-//     return;
-//   }
+    dialogTitle.innerHTML = entry.label;
+    dialogContent.innerHTML =
+      entry.description?.map(val => `<p>${val}</p>`).join('') || 'TDB';
+    dialogBadge.innerHTML = rings[entry.ring].name;
+    dialogBadge.style = `background: ${rings[entry.ring].color}`;
 
-//   // Close when backdrop is clicked
-//   if (el.tagName.toLocaleLowerCase() === 'dialog') {
-//     dialog.close();
-//   }
-// });
+    dialog.showModal();
+    return;
+  }
+
+  // Close when backdrop is clicked
+  if (el.tagName.toLocaleLowerCase() === 'dialog') {
+    dialog.close();
+  }
+});
