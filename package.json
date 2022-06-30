@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Reservix' tech radar, inspired by http://thoughtworks.com/radar/",
+  "repository": "github:reservix/reservix-tech-radar",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
