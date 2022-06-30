@@ -93,4 +93,28 @@ export const entries = [
     active: true,
     moved: 0,
   },
+  {
+    label: 'Next.js',
+    link: 'https://nextjs.org/',
+    quadrant,
+    ring: assess,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'express',
+    link: 'https://expressjs.com/',
+    quadrant,
+    ring: onHold,
+    active: true,
+    moved: 0,
+  },
+  {
+    label: 'fastify',
+    link: 'https://www.fastify.io/',
+    quadrant,
+    ring: assess,
+    active: true,
+    moved: 0,
+  },
 ];
