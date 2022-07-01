@@ -55,8 +55,7 @@ document.addEventListener('click', e => {
     const entry = getEntryInfo(getEntryName(el));
 
     dialogTitle.innerHTML = entry.label;
-    dialogContent.innerHTML =
-      entry.description?.map(val => `<p>${val}</p>`).join('') || 'TDB';
+    dialogContent.innerHTML = entry.description || 'TDB';
     dialogBadge.innerHTML = rings[entry.ring].name;
     dialogBadge.style = `background: ${rings[entry.ring].color}`;
 
