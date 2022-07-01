@@ -132,9 +132,10 @@ entries:
       compilation and bundling with Webpack and Babel, fast hot reloading for a
       convenient developer workflow among other features. It provides
       server-side rendering by default, improves search engine optimization and
-      the initial load time and supports incremental static generation. We've
-      had positive experience reports from teams using Next.js and, given its
-      large community, continue to be excited about the evolution of the
+      the initial load time and supports incremental static generation.
+
+      We've had positive experience reports from teams using Next.js and, given
+      its large community, continue to be excited about the evolution of the
       framework.
     ring: assess
     active: true
