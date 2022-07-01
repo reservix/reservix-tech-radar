@@ -2,37 +2,106 @@ name: CI/CD, Infrastructure & Automation
 quadrant: 3
 entries:
   - label: Docker
-    link: https://www.docker.com/
+    description: >
+      <a href="https://www.docker.com/">Docker</a> is an open source
+      containerization platform. It enables developers to package applications
+      into containers—standardized executable components combining application
+      source code with the operating system (OS) libraries and dependencies
+      required to run that code in any environment.
+
+      Development teams love Docker, as the Docker image format makes it easier
+      to achieve parity between development and production, making for reliable
+      deployments. It is a natural fit in a microservices-style application as a
+      packaging mechanism for self-contained services. On the operational front,
+      Docker support in monitoring tools (Sensu, Prometheus, cAdvisor, etc.),
+      orchestration tools (Kubernetes, Marathon, etc.) and deployment-automation
+      tools reflect the growing maturity of the platform and its readiness for
+      production use.
     ring: adopt
     active: true
     moved: 0
-  - label: GitLab CI
-    link: https://docs.gitlab.com/ee/ci/
+  - label: GitLab CI/CD
+    description: >
+      <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> is a tool for
+      software development using the continuous methodologies: Continuous
+      Integration (CI), Continuous Delivery (CD) and Continuous Deployment (CD).
+      It helps to catch bugs and errors early in the development cycle and
+      ensures that all the code deployed to production complies with the code
+      standards you established for your app. GitLab CI/CD can automatically
+      build, test, deploy, and monitor your applications.
+
+      Since we are using GitLab as to develop and manage our software, using its
+      integrated CI/CD tools is our preferred way to make sure our projects are
+      healthy and meet our quality standards.
     ring: adopt
     active: true
     moved: 0
   - label: GitHub Actions
-    link: https://github.com/features/actions
+    description: >
+      <a href="https://github.com/features/actions">GitHub Actions</a> are a way
+      to automate, customize, and execute software development workflows right
+      in your repository with GitHub Actions. You can discover, create, and
+      share actions to perform any job you'd like, including CI/CD, and combine
+      actions in a completely customized workflow.
+
+      Projects, especially the open source ones, that are hosted on GitHub
+      should make use of Github Actions to ensure that the projects meet our
+      quality standards.
     ring: adopt
     active: true
     moved: 0
   - label: Kibana
-    link: https://www.elastic.co/kibana/
+    description: >
+      When combining modern techniques and architecture styles, such as
+      microservices, DevOps and QA in production, development teams need
+      increasingly sophisticated monitoring. Simply looking a graphs of disk
+      usage and CPU utilization is not sufficient anymore, and many teams
+      collect application and business-specific metrics using tools. <a
+      href="https://www.elastic.co/kibana/">Kibana</a> is a tools that can help
+      with gathering this data and boos observability.
+
+      We use Kibana extensively to ensure our applications run smoothly even
+      under high-load scenarios. Kibana helps us to find issues with our system
+      fast and react accordingly. Based on its strengths, Kibana has become our
+      default choice for observing our production environments.
     ring: adopt
     active: true
     moved: 0
   - label: Terraform
-    link: https://www.terraform.io/
+    description: >
+      With <a href=" https://www.terraform.io/">Terraform</a>, you can manage
+      cloud infrastructure by writing declarative definitions. The configuration
+      of the servers instantiated by Terraform is usually left to tools like
+      Puppet, Chef or Ansible.
     ring: trial
     active: true
     moved: 0
   - label: SonarQube
+    description: >
+      <a href="SonarQube">SonarQube</a> is a open-source platform for the
+      continuous inspection of code quality. It performs automatic reviews with
+      static analysis of code which can detect bugs, code smells in many
+      programming languages.
+
+      We infrequently set it up for projects but are not sure about the
+      additional value we get from the analysis. We need more teams actively
+      using it to make a decision.
     link: https://www.sonarqube.org/
     ring: assess
     active: true
     moved: 0
   - label: Chromatic
-    link: https://www.chromatic.com/
+    description: >
+      <a href="https://www.chromatic.com/">Chromatic</a> is a cloud-based tool
+      for visual regression tests, based on <a
+      href="https://storybook.js.org/">Storybook</a>. It streamlines the process
+      of shipping UI components with higher quality by providing a shared
+      workspace for teams to comment and review UI work together.
+
+      We started using Chromatic for reviewing work on our design system in the
+      hope that we more confidently can manage the different themes withour
+      accidental breaking things. So far it looks very promising and an
+      improvement to our previous workflow.
     ring: assess
     active: true
     moved: 0
