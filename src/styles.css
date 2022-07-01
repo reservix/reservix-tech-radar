@@ -84,13 +84,13 @@ dialog {
   width: min(100% - 3rem, var(--size-content-3, 60ch));
   border-radius: var(--radius-2);
   border: var(--border-size-2) solid var(--gray-7);
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-fluid-1);
 }
 
 dialog header {
   display: flex;
   gap: var(--size-fluid-2);
-  margin-block-end: var(--size-5);
+  margin-block-end: var(--size-fluid-4);
 }
 
 dialog header :first-child {
@@ -98,7 +98,7 @@ dialog header :first-child {
 }
 
 dialog h4 {
-  font-size: var(--font-size-fluid-2);
+  font-size: var(--font-size-fluid-3);
   line-height: var(--font-lineheight-0);
 }
 
@@ -152,7 +152,7 @@ dialog::backdrop {
 .badge {
   display: inline-block;
   color: var(--gray-0);
-  font-size: var(--font-size-00);
+  font-size: var(--font-size-fluid-0);
   font-weight: var(--font-weight-7);
   text-transform: uppercase;
   border-radius: var(--radius-2);
