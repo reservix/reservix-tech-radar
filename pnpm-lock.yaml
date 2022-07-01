@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@marigold/prettier-config': 0.3.0
-  '@parcel/transformer-yaml': ^2.6.2
+  '@parcel/transformer-yaml': 2.6.2
   gh-pages: 4.0.0
   parcel: 2.6.2
 
