@@ -2,6 +2,20 @@ name: Tooling
 quadrant: 0
 entries:
   - label: npm
+    description: >
+      <a href="https://www.npmjs.com/">npm</a> is the default package manager
+      for the JavaScript runtime environment Node.js. It consists of a command
+      line client, also called npm, and an online database of public and
+      paid-for private packages, called the npm registry. The registry is
+      accessed via the client, and the available packages can be browsed and
+      searched via the npm website. The package manager and the registry are
+      managed by npm, Inc.
+
+      Even though npm comes preinstalled with Node.js it lacks behind its
+      competition, namely yarn and pnpm. The competitors also come with more
+      relevant features and installing dependencies with npm is a magnitude
+      slower than with other package manager. Because of this we recommend to
+      use pnpm or yarn in your project instead.
     link: https://www.npmjs.com/
     ring: onHold
     active: true
@@ -63,18 +77,96 @@ entries:
     active: true
     moved: 0
   - label: Webpack
+    description: >
+      <a href="http://webpack.github.io/">Webpack</a> has solidified itself as
+      the go-to JavaScript module bundler. With its ever-growing list of
+      loaders, it provides a single dependency tree for all your static assets,
+      allowing flexible manipulation of JavaScript, CSS, etc. and minimizing
+      production builds.
+
+      That said, newer bundlers (vite, Parcel, esbuild, tsup) have simpler
+      configuration, allowing people to add/create plugins and configure the
+      setup more easily, and some utilize ESM to make ultra fast reload speeds
+      and smaller bundles. Because of this, Webpack is not the best tool to use
+      anymore. We recommend to switch to another bundler for your projects.
     ring: onHold
     active: true
     moved: 0
   - label: Parcel
-    ring: trial
+    description: >
+      <a href="https://parceljs.org/">Parcel</a> is a zero configuration build
+      tool for the web. It combines a great out-of-the-box development
+      experience with a scalable architecture that can take your project from
+      just getting started to massive production application.
+
+      It has all the standard bundling features and provides true
+      zero-configuration experience, making it really easy to get started with
+      and use. It has fast bundle times and beats its competitors in many
+      benchmarks. Parcel has gained a lot of community interest and continues to
+      innovate.
+
+      We started using Parcel in some projects to quickly set up a great
+      development environment. Since it doesn't require a lot of configuration,
+      if any at all, it is easy to replace other bundlers like Webpack.
+    ring: assess
     active: true
     moved: 0
   - label: tsup
+    description: >
+      <a href="https://tsup.egoist.sh/">tsup</a> is zero-config TypeScript
+      bundler, powered by <a href="esbuild">esbuild</a>. It comes with all the
+      necessary features and can be used as a drop-in replacement for the
+      default TypeScript compiler (tsc). Since it's written in Rust, it's also
+      much faster than the tsc.
+
+      We started using tsup in some projects that previously used tsc. Migration
+      was very smooth and we also found some potential bugs inside the
+      TypeScript code, since tsup is much strciter thant tsc.
     ring: trial
     active: true
     moved: 0
   - label: jest
+    description: >
+      <a href="https://jestjs.io/">jest</a> is a powerful Javascript testing
+      framework that supports running tests in a (virtuell) browser environment
+      as well as in Node.js. It is a very efficient and feature packed test
+      runner that supports TypeScript, React and other technologies out of the
+      box.
+
+      We recommend using jest as your default test runner for Javascript and
+      Typescript based projects.
     ring: adopt
+    active: true
+    moved: 0
+  - label: Cypress
+    description: >
+      <a href="https://cypress.io/">Cypress</a> is an end-to-end test framework.
+      It aims to address the pain points developers or QA engineers face while
+      testing an application. Cypress is a more developer-friendly tool that
+      uses a unique DOM manipulation technique and operates directly in the
+      browser.
+
+      Fixing end-to-end test failures in CI can be a painful experience,
+      especially in headless mode. Cypress is a useful tool that helps
+      developers build end-to-end tests easily and records all test steps as a
+      video in an MP4 file. Instead of reproducing the issue in headless mode,
+      developers can watch the testing video in order to fix it.
+
+      We started using Cypress in some projects instead of Behat and the first
+      results look very promising.
+    ring: assess
+    active: true
+    moved: 0
+  - label: Behat
+    description: >
+      <a href="https://behat.org/">Behat</a> is a PHP testing framework which
+      can be used to automate acceptance tests in a human readable language
+      called Gherkin. Since it is based on Cucumber, it also helps teams to
+      adopt and implement Behavioral Driven Development (BDD).
+
+      While Behat is still a good solution, other frameworks like Cypress are
+      more feature rich and developer friendly. We recommend to use an
+      alternative like Cypress for new projects.
+    ring: onHold
     active: true
     moved: 0
