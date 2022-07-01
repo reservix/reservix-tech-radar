@@ -5,6 +5,7 @@
   "description": "Reservix' tech radar, inspired by http://thoughtworks.com/radar/",
   "repository": "github:reservix/reservix-tech-radar",
   "source": "src/index.html",
+  "sideEffects": false,
   "scripts": {
     "start": "parcel",
     "build": "parcel build --public-url ./",
@@ -12,6 +13,7 @@
   },
   "devDependencies": {
     "@marigold/prettier-config": "0.3.0",
+    "@parcel/transformer-yaml": "^2.6.2",
     "gh-pages": "4.0.0",
     "parcel": "2.6.2"
   }

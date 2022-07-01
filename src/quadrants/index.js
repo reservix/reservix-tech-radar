@@ -1,7 +1,9 @@
-import * as codingFrameworks from './coding-frameworks';
-import * as tooling from './tooling';
-import * as cicdInfrastructureAutomation from './cicd-infrastructure-automation';
-import * as platformServices from './platform-services';
+import { ringMap } from '../rings';
+
+import cicdInfrastructureAutomation from './cicd-infrastructure-automation.yml';
+import codingFrameworks from './coding-frameworks.yml';
+import platformServices from './platform-services.yml';
+import tooling from './tooling.yml';
 
 /**
  * WARNING: Don't change the ordering manually here. Instead change the
@@ -19,9 +21,21 @@ export const quadrants = [
   platformServices,
 ].sort((a, b) => a.quadrant - b.quadrant);
 
-export const entries = [
-  ...codingFrameworks.entries,
-  ...tooling.entries,
-  ...cicdInfrastructureAutomation.entries,
-  ...platformServices.entries,
-];
+/**
+ * Use the YML data and convert it to the entries format of the
+ * radar. We use YML to have a better authoring experience. Writing
+ * the descriptions in JSON/JS is annoying and cumbersome.
+ */
+const getEntriesFromYML = input =>
+  input.entries.map(({ description = '', ring, ...rest }) => ({
+    ...rest,
+    quadrant: input.quadrant,
+    ring: ringMap[ring],
+    description: description
+      .split(/\r?\n/)
+      .filter(Boolean)
+      .map(text => `<p>${text}</p>`)
+      .join(''),
+  }));
+
+export const entries = quadrants.map(getEntriesFromYML).flat();
