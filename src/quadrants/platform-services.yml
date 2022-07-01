@@ -10,15 +10,34 @@ entries:
     active: true
     moved: 0
   - label: Elasticsearch
+    description: >
+      <a href="https://www.elastic.co/">Elastic Search</a> is an open source
+      search platform. It is an extensible, multi-tenanted, and horizontally
+      scalable search solution based on Apache Lucene. It allows complex data
+      structures to be indexed and retrieved through a JSON based REST API. It
+      provides an elegant model of operation with automatic discovery of peers
+      in a cluster, failover, and replication. Elastic Search can be extended
+      with a plugin system that allows adding new functionality and changing
+      existing behavior. The community around this tool is quite vibrant as
+      illustrated by the number of client libraries available in languages like
+      Java, C#, Ruby, and JavaScript.
     ring: adopt
     active: true
     moved: 0
   - label: Redis
+    description: >
+      <a href="https://redis.io/">Redis</a> is an open source, in-memory data
+      structure store used as a database, cache, message broker, and streaming
+      engine. Redis provides data structures such as strings, hashes, lists,
+      sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial
+      indexes, and streams.
+
+       Redis has proven a useful tool on multiple projects as structured cache.
     ring: adopt
     active: true
     moved: 0
   - label: MongoDB
-    description:
+    description: >
       For problems that fit the document database model, <a
       href="https://www.mongodb.com/">MongoDB</a> is now the most popular
       choice. In addition to ease of use and a solid technical implementation,
@@ -35,6 +54,20 @@ entries:
     active: true
     moved: 0
   - label: AWS Lambda
+    description: >
+      <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> is a serverless
+      compute service that runs your code in response to events and
+      automatically manages the underlying compute resources for you. These
+      events may include changes in state or an update, such as a user placing
+      an item in a shopping cart on an ecommerce website.
+
+      For stateless services, this means you don’t need to worry about running
+      any long-lived machines, potentially reducing costs and improving
+      security. Despite other forays into the PaaS space by AWS, Lambda looks
+      the closest to getting this right.
+
+      Our teams continue to enjoy using AWS Lambda and are beginning to use it
+      to experiment with Serverless architectures.
     ring: adopt
     active: true
     moved: 0
@@ -59,7 +92,8 @@ entries:
     active: true
     moved: 0
   - label: GraphQL
-    description: There are many successful <a
+    description: >
+      There are many successful <a
       href="https://github.com/facebook/graphql">GraphQL</a> implementations in
       our projects. That said, we've concerns about misuse of this framework and
       some of the problems that can occur. Examples include performance gotchas
@@ -73,10 +107,10 @@ entries:
     active: true
     moved: 0
   - label: HTTP/REST
-    description: A REST API (also known as RESTful API) is an application
-      programming interface (API or web API) that conforms to the constraints of
-      REST architectural style and allows for interaction with RESTful web
-      services.
+    description: >
+      A REST API (also known as RESTful API) is an application programming
+      interface (API or web API) that conforms to the constraints of REST
+      architectural style and allows for interaction with RESTful web services.
 
       While REST APIs have their shortcommings (e.g. under or over
       data-fetching), REST APIs are scalable and allows developers to structure
@@ -88,8 +122,9 @@ entries:
     active: true
     moved: 0
   - label: Event-driven
-    description: Message-driven system integration provides multiple benefits.
-      One remarkable benefit is that this integration style uses asynchronous
+    description: >
+      Message-driven system integration provides multiple benefits. One
+      remarkable benefit is that this integration style uses asynchronous
       communication, i.e. the temporal decoupling of sender and receiver. At
       Reservix, we have started to establish an event-driven architecture as our
       preferred way of system integration.
