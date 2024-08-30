@@ -8,12 +8,14 @@
   "scripts": {
     "start": "parcel",
     "build": "rm -rf dist && parcel build --public-url ./",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@marigold/prettier-config": "0.3.0",
     "@parcel/transformer-yaml": "2.6.2",
     "gh-pages": "4.0.0",
-    "parcel": "2.6.2"
+    "parcel": "2.6.2",
+    "prettier": "3.3.3"
   }
 }
