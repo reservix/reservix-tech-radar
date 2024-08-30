@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@marigold/prettier-config':
-        specifier: 0.3.0
-        version: 0.3.0(prettier@3.3.3)
+        specifier: 0.3.1
+        version: 0.3.1(prettier@3.3.3)
       '@parcel/transformer-yaml':
         specifier: 2.6.2
         version: 2.6.2(@parcel/core@2.6.2)
@@ -95,8 +95,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@marigold/prettier-config@0.3.0':
-    resolution: {integrity: sha512-aYepyF1nzoh+fFASNHBjOYmhWNnvJV+HsHEwLta19pz05ogoVqCgG/W2Qk9NrJVn/VOJLEuC9971r5U9ddrs5Q==}
+  '@marigold/prettier-config@0.3.1':
+    resolution: {integrity: sha512-7xswxyNSPjtV9d0f0xYv6BUI6tw1Vrjvai3MJ8XTs4T0iyvHUrGg6CaZ2gCY83PRwGHIRX0qihp+/bhBQc7Q8g==}
     peerDependencies:
       prettier: 2.x
 
@@ -1157,7 +1157,7 @@ snapshots:
   '@lmdb/lmdb-win32-x64@2.5.2':
     optional: true
 
-  '@marigold/prettier-config@0.3.0(prettier@3.3.3)':
+  '@marigold/prettier-config@0.3.1(prettier@3.3.3)':
     dependencies:
       prettier: 3.3.3
 
