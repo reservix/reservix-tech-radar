@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticCommitTypeAll(chore)",
+    ":rebaseStalePrs"
+  ],
+  "schedule": ["before 4am on Monday"],
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
+    }
+  ],
+  "timezone": "Europe/Berlin"
+}
