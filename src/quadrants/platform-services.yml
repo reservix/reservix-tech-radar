@@ -1,4 +1,4 @@
-name: Platform & Services
+name: Infrastructure
 quadrant: 1
 entries:
   - label: MySQL
@@ -46,9 +46,9 @@ entries:
       document database was not a good fit or they did not understand the
       inherent complexity. When used appropriately, however, MongoDB has proven
       itself on many projects.
-    ring: adopt
+    ring: onHold
     active: true
-    moved: 0
+    moved: -1
   - label: DynamoDB
     ring: assess
     active: true
@@ -79,6 +79,10 @@ entries:
     ring: adopt
     active: true
     moved: 0
+  - label: AWS S3
+    ring: adopt
+    active: true
+    moved: 0
   - label: Keycloak
     ring: adopt
     active: true
@@ -87,54 +91,6 @@ entries:
     ring: trial
     active: true
     moved: 0
-  - label: Helm
-    ring: trial
-    active: true
-    moved: 0
-  - label: GraphQL
-    description: >
-      There are many successful <a
-      href="https://github.com/facebook/graphql">GraphQL</a> implementations in
-      our projects. That said, we've concerns about misuse of this framework and
-      some of the problems that can occur. Examples include performance gotchas
-      around N+1 queries and lots of boilerplate code needed when adding new
-      models, leading to complexity. There are workarounds to these gotchas such
-      as query caching.
-
-      Even though it's not a silver bullet, we still think it's worth trying it
-      as part of your architecture.
-    ring: trial
-    active: true
-    moved: 0
-  - label: HTTP/REST
-    description: >
-      A REST API (also known as RESTful API) is an application programming
-      interface (API or web API) that conforms to the constraints of REST
-      architectural style and allows for interaction with RESTful web services.
-
-      While REST APIs have their shortcommings (e.g. under or over
-      data-fetching), REST APIs are scalable and allows developers to structure
-      data as per their needs and the client knows what structure of data to
-      expect. Moreover, this enables you to use many third-party APIs as well,
-      by just simply seeing their sample data responses, and the best part is
-      you probably don't have to manage any of these third-party APIs.
-    ring: adopt
-    active: true
-    moved: 0
-  - label: Event-driven
-    description: >
-      Message-driven system integration provides multiple benefits. One
-      remarkable benefit is that this integration style uses asynchronous
-      communication, i.e. the temporal decoupling of sender and receiver. At
-      Reservix, we have started to establish an event-driven architecture as our
-      preferred way of system integration.
-
-      You can read more about this topics <a
-      href="https://reservix.atlassian.net/l/c/H4Hvr9k0">here</a> (internal
-      link).
-    ring: adopt
-    active: true
-    moved: 1
   - label: Serverless
     description: >
       The Serverless Framework is an open-source tool that simplifies the
@@ -161,3 +117,41 @@ entries:
     ring: trial
     active: true
     moved: 2
+  - label: ECS
+    description: >
+
+    link: https://aws.amazon.com/de/ecs/
+    ring: adopt
+    active: true
+    moved: 2
+  - label: Kibana
+    description: >
+      When combining modern techniques and architecture styles, such as
+      microservices, DevOps and QA in production, development teams need
+      increasingly sophisticated monitoring. Simply looking a graphs of disk
+      usage and CPU utilization is not sufficient anymore, and many teams
+      collect application and business-specific metrics using tools. <a
+      href="https://www.elastic.co/kibana/">Kibana</a> is a tools that can help
+      with gathering this data and boos observability.
+
+      We use Kibana extensively to ensure our applications run smoothly even
+      under high-load scenarios. Kibana helps us to find issues with our system
+      fast and react accordingly. Based on its strengths, Kibana has become our
+      default choice for observing our production environments.
+    ring: adopt
+    active: true
+    moved: 0
+  - label: Terraform
+    description: >
+      <a href=" https://www.terraform.io/">Terraform</a> is an open-source
+      infrastructure as code tool that allows developers to define and provision
+      data center infrastructure using a declarative configuration language. It
+      enables consistent and repeatable deployment of cloud and on-premises
+      resources, simplifying infrastructure management across multiple
+      environments.
+
+      Terraform is widely used to power and manage our infrastructure, ensuring
+      consistent and scalable deployment.
+    ring: adopt
+    active: true
+    moved: 1

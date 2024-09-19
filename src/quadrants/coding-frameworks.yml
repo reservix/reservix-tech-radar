@@ -236,3 +236,31 @@ entries:
     ring: assess
     active: false
     moved: 0
+  - label: GraphQL
+    description: >
+      There are many successful <a
+      href="https://github.com/facebook/graphql">GraphQL</a> implementations in
+      our projects. That said, we've concerns about misuse of this framework and
+      some of the problems that can occur. Examples include performance gotchas
+      around N+1 queries and lots of boilerplate code needed when adding new
+      models, leading to complexity. There are workarounds to these gotchas such
+      as query caching.
+
+      TODO
+    ring: onHold
+    active: true
+    moved: 1
+  - label: Event-driven
+    description: >
+      Message-driven system integration provides multiple benefits. One
+      remarkable benefit is that this integration style uses asynchronous
+      communication, i.e. the temporal decoupling of sender and receiver. At
+      Reservix, we have started to establish an event-driven architecture as our
+      preferred way of system integration.
+
+      You can read more about this topics <a
+      href="https://reservix.atlassian.net/l/c/H4Hvr9k0">here</a> (internal
+      link).
+    ring: adopt
+    active: true
+    moved: 1

@@ -1,4 +1,4 @@
-name: CI/CD, Infrastructure & Automation
+name: CI/CD & Automation
 quadrant: 3
 entries:
   - label: Docker
@@ -39,34 +39,3 @@ entries:
     ring: adopt
     active: true
     moved: 0
-  - label: Kibana
-    description: >
-      When combining modern techniques and architecture styles, such as
-      microservices, DevOps and QA in production, development teams need
-      increasingly sophisticated monitoring. Simply looking a graphs of disk
-      usage and CPU utilization is not sufficient anymore, and many teams
-      collect application and business-specific metrics using tools. <a
-      href="https://www.elastic.co/kibana/">Kibana</a> is a tools that can help
-      with gathering this data and boos observability.
-
-      We use Kibana extensively to ensure our applications run smoothly even
-      under high-load scenarios. Kibana helps us to find issues with our system
-      fast and react accordingly. Based on its strengths, Kibana has become our
-      default choice for observing our production environments.
-    ring: adopt
-    active: true
-    moved: 0
-  - label: Terraform
-    description: >
-      <a href=" https://www.terraform.io/">Terraform</a> is an open-source
-      infrastructure as code tool that allows developers to define and provision
-      data center infrastructure using a declarative configuration language. It
-      enables consistent and repeatable deployment of cloud and on-premises
-      resources, simplifying infrastructure management across multiple
-      environments.
-
-      Terraform is widely used to power and manage our infrastructure, ensuring
-      consistent and scalable deployment.
-    ring: adopt
-    active: true
-    moved: 1
