@@ -130,12 +130,34 @@ entries:
       preferred way of system integration.
 
       You can read more about this topics <a
-      href="https://reservix.atlassian.net/l/c/H4Hvr9k0">here</a>.
-    ring: trial
+      href="https://reservix.atlassian.net/l/c/H4Hvr9k0">here</a> (internal
+      link).
+    ring: adopt
     active: true
-    moved: 0
+    moved: 1
   - label: Serverless
+    description: >
+      The Serverless Framework is an open-source tool that simplifies the
+      deployment and management of serverless applications, allowing developers
+      to build and run applications without managing infrastructure.
+
+      We are currently evaluating the Serverless Framework due to changes in
+      their pricing model in version 4, and we are uncertain if it remains
+      sustainable for our use case moving forward.
     link: https://www.serverless.com/
+    ring: onHold
+    active: true
+    moved: -1
+  - label: CDK
+    description: >
+      The <a href="https://aws.amazon.com/de/cdk/">AWS Cloud Development Kit
+      (CDK)</a> is an open-source framework that enables developers to define
+      cloud infrastructure using familiar programming languages.
+
+      It is currently being evaluated as an alternative to the Serverless
+      Framework, offering more flexibility and potential alignment with our
+      infrastructure needs.
+    link: https://aws.amazon.com/de/cdk/
     ring: trial
     active: true
-    moved: 0
+    moved: 2
