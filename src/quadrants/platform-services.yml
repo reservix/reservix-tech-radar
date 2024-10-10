@@ -5,10 +5,27 @@ entries:
     ring: adopt
     active: true
     moved: 0
+    description: >
+      <a href="https://www.mysql.com/">MySQL</a> is an open-source relational
+      database management system. Its name is a combination of "My", the name
+      of co-founder Michael Widenius's daughter My, and "SQL", the acronym for
+      Structured Query Language.
+      
+      In our software products, MySQL remains our preferred database management
+      system, although we may consider putting it on hold in the future. Other
+      systems, such as PostgreSQL, have also demonstrated excellent performance
+      and might replace MySQL in new products.
   - label: PostgreSQL
     ring: trial
     active: true
     moved: 0
+    description: >
+      <a href="https://www.postgresql.org/">PostgreSQL</a> also known as 
+      Postgres, is a free and open-source relational database management
+      system emphasizing extensibility and SQL compliance.
+      
+      In our software products PostgreSQL is kind of new, even though it
+      is already a solid component of our software landscape.
   - label: Elasticsearch
     description: >
       <a href="https://www.elastic.co/">Elastic Search</a> is an open source
@@ -21,6 +38,13 @@ entries:
       existing behavior. The community around this tool is quite vibrant as
       illustrated by the number of client libraries available in languages like
       Java, C#, Ruby, and JavaScript.
+      
+      In our software products, we utilize Elasticsearch as a search cluster
+      for end users. In other cases, we still maintain custom solutions that 
+      may eventually be migrated to Elasticsearch.
+
+      Elasticsearch also serves as our primary solution for observability, see
+      Kibana for a detailed description.
     ring: adopt
     active: true
     moved: 0
@@ -32,7 +56,7 @@ entries:
       sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial
       indexes, and streams.
 
-       Redis has proven a useful tool on multiple projects as structured cache.
+      Redis has proven a useful tool on multiple projects as structured cache.
     ring: adopt
     active: true
     moved: 0
@@ -67,7 +91,7 @@ entries:
       the closest to getting this right.
 
       Our teams continue to enjoy using AWS Lambda and are beginning to use it
-      to experiment with Serverless architectures.
+      for serverless architectures which are built for the future.
     ring: adopt
     active: true
     moved: 0
@@ -75,10 +99,28 @@ entries:
     ring: adopt
     active: true
     moved: 0
+    description: >
+      In our systems, we leverage Amazon SQS (Simple Queue Service) as a 
+      reliable message queuing service to decouple and scale microservices. 
+      It ensures smooth communication between distributed components by
+      managing message delivery efficiently.
+
+      SQS also supports various use cases, including event-driven architecture,
+      load leveling, and background task processing, making it an integral part
+      of our asynchronous workflows.
   - label: SNS
     ring: adopt
     active: true
     moved: 0
+    description: >
+      In our systems, we utilize Amazon SNS (Simple Notification Service) as a
+      scalable and reliable messaging service for pub/sub (publish/subscribe) 
+      communication. It enables the dissemination of messages to multiple 
+      subscribers, ensuring real-time updates across distributed systems.
+
+      SNS is particularly useful for event notifications, system alerts, and 
+      cross-application messaging, allowing us to build highly responsive and 
+      decoupled architectures.
   - label: AWS S3
     ring: adopt
     active: true
@@ -87,10 +129,26 @@ entries:
     ring: adopt
     active: true
     moved: 0
+    link: https://www.keycloak.org/
+    description: >
+      Keycloak is an open source software product to allow single sign-on with
+      identity and access management aimed at modern applications and services.
+      
+      We use Keycloak to provide our users with a unified Single Sign-On (SSO)
+      environment. This enables us to offer both employees and end users a 
+      seamless user experience while ensuring security compliance.
   - label: Kubernetes
     ring: trial
     active: true
     moved: 0
+    description: >
+      Kubernetes is an open-source container orchestration system for 
+      automating software deployment, scaling, and management. Originally
+      designed by Google, the project is now maintained by a worldwide 
+      community of contributors, and the trademark is held by the Cloud Native
+      Computing Foundation.
+      
+      We currently use it internally only to provide developer tools.
   - label: Serverless
     description: >
       The Serverless Framework is an open-source tool that simplifies the
@@ -119,7 +177,15 @@ entries:
     moved: 2
   - label: ECS
     description: >
-
+      Amazon Elastic Container Service (ECS) is a fully managed container
+      orchestration service that helps you to more efficiently deploy, manage,
+      and scale containerized applications.
+      
+      Our containerized production workloads were migrated from classic data
+      centers to ECS wherever possible. With ECS we can run our workloads 
+      at scale without bigger changes on the software components. With fargate
+      we have a serverless experience that gives our development teams to space
+      to focus on developing.
     link: https://aws.amazon.com/de/ecs/
     ring: adopt
     active: true
@@ -134,10 +200,11 @@ entries:
       href="https://www.elastic.co/kibana/">Kibana</a> is a tools that can help
       with gathering this data and boos observability.
 
-      We use Kibana extensively to ensure our applications run smoothly even
-      under high-load scenarios. Kibana helps us to find issues with our system
-      fast and react accordingly. Based on its strengths, Kibana has become our
-      default choice for observing our production environments.
+      We use Kibana extensively for our observability needs. It ensures that our
+      applications run smoothly even under high-load scenarios. Kibana helps us
+      to find issues with our system fast and react accordingly. Based on its
+      strengths, Kibana has become our default choice for observing our 
+      production environments.
     ring: adopt
     active: true
     moved: 0
