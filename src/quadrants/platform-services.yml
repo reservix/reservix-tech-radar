@@ -155,9 +155,12 @@ entries:
       deployment and management of serverless applications, allowing developers
       to build and run applications without managing infrastructure.
 
-      We are currently evaluating the Serverless Framework due to changes in
-      their pricing model in version 4, and we are uncertain if it remains
-      sustainable for our use case moving forward.
+      Here's an improved version of that text:
+
+      We are currently evaluating the changes in version 4, specifically regarding 
+      the updated pricing model. Due to these adjustments, we believe it may no 
+      longer be a sustainable option for our use case. As an alternative, we are 
+      exploring CDK to see if it better aligns with our needs.
     link: https://www.serverless.com/
     ring: onHold
     active: true
