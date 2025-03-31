@@ -35,7 +35,7 @@ entries:
       for better performance and efficiency in managing dependencies.
     ring: onHold
     active: true
-    moved: -1
+    moved: 0
   - label: composer
     description: >
       <a href="https://getcomposer.org/">Composer</a> Composer is a dependency
@@ -83,7 +83,7 @@ entries:
       effectiveness.
     ring: adopt
     active: true
-    moved: 2
+    moved: 0
   - label: jest
     description: >
       <a href="https://jestjs.io/">jest</a> is a powerful Javascript testing
@@ -108,7 +108,7 @@ entries:
       coverage.
     ring: adopt
     active: true
-    moved: 1
+    moved: 0
   - label: Behat
     description: >
       <a href="https://behat.org/">Behat</a> is a PHP testing framework which
@@ -122,3 +122,35 @@ entries:
     ring: onHold
     active: true
     moved: 0
+  - label: Matomo
+    description: >
+      <a href="https://matomo.org/">Matomo</a> is an open-source web analytics
+      platform that delivers comprehensive insights into user behavior, website
+      performance, and engagement while maintaining a strong focus on data
+      privacy and compliance.
+
+      Matomo is currently in a trial phase as we work through some outstanding
+      licensing and ownership questions. This trial period will allow us to
+      thoroughly evaluate the platform's compatibility with our existing systems
+      and address any legal and operational considerations. Once these issues
+      are clarified and resolved, we plan to roll out Matomo across all teams to
+      ensure a smooth and compliant integration.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: PHP/Pie
+    description: >
+      <a href="https://github.com/php/pie"PHP/>Pie</a> is an innovative
+      extension to the PHP ecosystem that provides a streamlined, modular
+      framework for building web applications. It enhances PHP’s native
+      capabilities by offering intuitive tools and a flexible architecture,
+      helping developers write cleaner, more maintainable code and accelerate
+      project delivery.
+
+      PHP/Pie is currently in a trial phase as we assess its performance and
+      gather initial user feedback. Teams interested in taking part in the trial
+      phase are encouraged to reach out to Team ArCo for more details and
+      onboarding support.
+    ring: adopt
+    active: true
+    moved: 2
