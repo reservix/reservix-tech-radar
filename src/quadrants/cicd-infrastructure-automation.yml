@@ -25,20 +25,6 @@ entries:
     ring: adopt
     active: true
     moved: 0
-  - label: GitHub Actions
-    description: >
-      <a href="https://github.com/features/actions">GitHub Actions</a> is a
-      feature that enables automation of tasks and workflows directly within
-      GitLab, similar to GitHub Actions. It allows developers to define custom
-      workflows, automate processes, and integrate seamlessly with their
-      existing CI/CD pipelines, enhancing productivity and collaboration.
-
-      Projects, especially the open source ones, that are hosted on GitHub
-      should make use of Github Actions to ensure that the projects meet our
-      quality standards.
-    ring: adopt
-    active: true
-    moved: 0
   - label: Blackfire
     description: >
       <a href="https://www.blackfire.io/">Blackfire</a> is a powerful
@@ -80,5 +66,22 @@ entries:
       manual effort, minimizes technical debt, and helps maintain code security
       by automating dependency management.
     ring: adopt
+    active: true
+    moved: 2
+  - label: Open Telemetry
+    description: >
+      <a href="https://opentelemetry.io">OpenTelemetry</a> is an open-source
+      framework that standardizes the collection and correlation of metrics,
+      logs, and traces across distributed systems, enabling better observability
+      and performance monitoring.
+
+      OpenTelemetry is currently in a trial phase as we assess its capability to
+      streamline our monitoring and diagnostics. Its potential to provide a
+      unified view of system performance makes it a promising tool for our
+      observability needs.
+
+      Teams interested in exploring its benefits are encouraged to reach out to
+      Team ArCo for further information and trial participation.
+    ring: trial
     active: true
     moved: 2

@@ -11,14 +11,14 @@ entries:
       co-founder Michael Widenius's daughter My, and "SQL", the acronym for
       Structured Query Language.
 
-      In our software products, MySQL remains our preferred database management
-      system, although we may consider putting it on hold in the future. Other
-      systems, such as PostgreSQL, have also demonstrated excellent performance
-      and might replace MySQL in new products.
+      Teams may adopt PostgreSQL as a robust, open-source relational database
+      solution. Its strong ACID compliance, extensibility, and active community
+      support make it an excellent choice for building secure and scalable
+      applications.
   - label: PostgreSQL
-    ring: trial
+    ring: adopt
     active: true
-    moved: 0
+    moved: 1
     description: >
       <a href="https://www.postgresql.org/">PostgreSQL</a> also known as
       Postgres, is a free and open-source relational database management system

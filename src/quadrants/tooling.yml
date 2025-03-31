@@ -154,3 +154,18 @@ entries:
     ring: adopt
     active: true
     moved: 2
+  - label: Grafana k6
+    description: >
+      <a href="https://k6.io">Grafana k6</a> is a modern load testing tool that
+      allows teams to simulate high-traffic scenarios and evaluate system
+      performance under stress. Its scriptable testing environment and clear
+      reporting capabilities make it an effective solution for identifying
+      performance bottlenecks.
+
+      Teams are encouraged to adopt Grafana k6 to proactively optimize
+      application performance. Its robust testing features help ensure that
+      systems remain responsive and reliable even under demanding load
+      conditions.
+    ring: adopt
+    active: true
+    moved: 2

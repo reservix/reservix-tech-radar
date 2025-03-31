@@ -66,21 +66,6 @@ entries:
     ring: onHold
     active: true
     moved: 0
-  - label: jQuery
-    description: >
-      <a href="https://jquery.com/">jQuery</a> is a lightweight JavaScript
-      library that simplifies HTML document manipulation, event handling, and
-      animation with an easy-to-use API. It was widely popular for making
-      cross-browser development easier, though its use has declined with the
-      rise of modern frameworks like React.
-
-      React has become our go-to choice for building UIs, particularly when
-      paired with Marigold. We are not using jQuery for new developments, and
-      whenever we modify, add, or change existing JavaScript code, it should be
-      considered for refactoring to React.
-    ring: onHold
-    active: true
-    moved: 0
   - label: React
     description: >
       <a href="https://react.dev/">React</a> is a popular JavaScript library for
@@ -135,18 +120,6 @@ entries:
       their respective area architect.
     active: true
     ring: trial
-    moved: 0
-  - label: Zend
-    description: >
-      <a href="https://framework.zend.com/">Zend Framework</a> is a collection
-      of professional PHP packages. It can be used to develop web applications
-      and services using PHP 5.6+, and provides 100% object-oriented code using
-      a broad spectrum of language features.
-
-      Our teams switched or are using Symfony to build our applications and thus
-      the later should be preferred for projects.
-    ring: onHold
-    active: true
     moved: 0
   - label: Marigold
     description: >
