@@ -85,3 +85,17 @@ entries:
     ring: trial
     active: true
     moved: 2
+  - label: Web Components
+    description: >
+      <a href="https://www.webcomponents.org">Web Components</a> are a set of
+      standardized web platform APIs that enable developers to create
+      encapsulated, reusable custom HTML elements, fostering modularity and
+      maintainability in web development.
+
+      The adoption of Web Components is currently on hold as we reassess their
+      integration within our ecosystem. Due to compatibility and integration
+      concerns with our existing frameworks, teams are advised not to use them
+      at this time.
+    ring: trial
+    active: true
+    moved: 2
