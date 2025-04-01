@@ -7,25 +7,25 @@ entries:
     moved: 0
     description: >
       <a href="https://www.mysql.com/">MySQL</a> is an open-source relational
-      database management system. Its name is a combination of "My", the name
-      of co-founder Michael Widenius's daughter My, and "SQL", the acronym for
+      database management system. Its name is a combination of "My", the name of
+      co-founder Michael Widenius's daughter My, and "SQL", the acronym for
       Structured Query Language.
-      
-      In our software products, MySQL remains our preferred database management
-      system, although we may consider putting it on hold in the future. Other
-      systems, such as PostgreSQL, have also demonstrated excellent performance
-      and might replace MySQL in new products.
+
+      Teams may adopt PostgreSQL as a robust, open-source relational database
+      solution. Its strong ACID compliance, extensibility, and active community
+      support make it an excellent choice for building secure and scalable
+      applications.
   - label: PostgreSQL
-    ring: trial
+    ring: adopt
     active: true
-    moved: 0
+    moved: 1
     description: >
-      <a href="https://www.postgresql.org/">PostgreSQL</a> also known as 
-      Postgres, is a free and open-source relational database management
-      system emphasizing extensibility and SQL compliance.
-      
-      In our software products PostgreSQL is kind of new, even though it
-      is already a solid component of our software landscape.
+      <a href="https://www.postgresql.org/">PostgreSQL</a> also known as
+      Postgres, is a free and open-source relational database management system
+      emphasizing extensibility and SQL compliance.
+
+      In our software products PostgreSQL is kind of new, even though it is
+      already a solid component of our software landscape.
   - label: Elasticsearch
     description: >
       <a href="https://www.elastic.co/">Elastic Search</a> is an open source
@@ -38,25 +38,13 @@ entries:
       existing behavior. The community around this tool is quite vibrant as
       illustrated by the number of client libraries available in languages like
       Java, C#, Ruby, and JavaScript.
-      
-      In our software products, we utilize Elasticsearch as a search cluster
-      for end users. In other cases, we still maintain custom solutions that 
-      may eventually be migrated to Elasticsearch.
+
+      In our software products, we utilize Elasticsearch as a search cluster for
+      end users. In other cases, we still maintain custom solutions that  may
+      eventually be migrated to Elasticsearch.
 
       Elasticsearch also serves as our primary solution for observability, see
       Kibana for a detailed description.
-    ring: adopt
-    active: true
-    moved: 0
-  - label: Redis
-    description: >
-      <a href="https://redis.io/">Redis</a> is an open source, in-memory data
-      structure store used as a database, cache, message broker, and streaming
-      engine. Redis provides data structures such as strings, hashes, lists,
-      sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial
-      indexes, and streams.
-
-      Redis has proven a useful tool on multiple projects as structured cache.
     ring: adopt
     active: true
     moved: 0
@@ -72,7 +60,7 @@ entries:
       itself on many projects.
     ring: onHold
     active: true
-    moved: -1
+    moved: 0
   - label: DynamoDB
     ring: assess
     active: true
@@ -100,10 +88,10 @@ entries:
     active: true
     moved: 0
     description: >
-      In our systems, we leverage Amazon SQS (Simple Queue Service) as a 
-      reliable message queuing service to decouple and scale microservices. 
-      It ensures smooth communication between distributed components by
-      managing message delivery efficiently.
+      In our systems, we leverage Amazon SQS (Simple Queue Service) as a
+      reliable message queuing service to decouple and scale microservices.  It
+      ensures smooth communication between distributed components by managing
+      message delivery efficiently.
 
       SQS also supports various use cases, including event-driven architecture,
       load leveling, and background task processing, making it an integral part
@@ -114,12 +102,12 @@ entries:
     moved: 0
     description: >
       In our systems, we utilize Amazon SNS (Simple Notification Service) as a
-      scalable and reliable messaging service for pub/sub (publish/subscribe) 
-      communication. It enables the dissemination of messages to multiple 
+      scalable and reliable messaging service for pub/sub (publish/subscribe)
+      communication. It enables the dissemination of messages to multiple
       subscribers, ensuring real-time updates across distributed systems.
 
-      SNS is particularly useful for event notifications, system alerts, and 
-      cross-application messaging, allowing us to build highly responsive and 
+      SNS is particularly useful for event notifications, system alerts, and
+      cross-application messaging, allowing us to build highly responsive and
       decoupled architectures.
   - label: AWS S3
     ring: adopt
@@ -133,21 +121,21 @@ entries:
     description: >
       Keycloak is an open source software product to allow single sign-on with
       identity and access management aimed at modern applications and services.
-      
+
       We use Keycloak to provide our users with a unified Single Sign-On (SSO)
-      environment. This enables us to offer both employees and end users a 
+      environment. This enables us to offer both employees and end users a
       seamless user experience while ensuring security compliance.
   - label: Kubernetes
     ring: trial
     active: true
     moved: 0
     description: >
-      Kubernetes is an open-source container orchestration system for 
-      automating software deployment, scaling, and management. Originally
-      designed by Google, the project is now maintained by a worldwide 
-      community of contributors, and the trademark is held by the Cloud Native
-      Computing Foundation.
-      
+      Kubernetes is an open-source container orchestration system for automating
+      software deployment, scaling, and management. Originally designed by
+      Google, the project is now maintained by a worldwide community of
+      contributors, and the trademark is held by the Cloud Native Computing
+      Foundation.
+
       We currently use it internally only to provide developer tools.
   - label: Serverless
     description: >
@@ -157,14 +145,15 @@ entries:
 
       Here's an improved version of that text:
 
-      We are currently evaluating the changes in version 4, specifically regarding 
-      the updated pricing model. Due to these adjustments, we believe it may no 
-      longer be a sustainable option for our use case. As an alternative, we are 
-      exploring CDK to see if it better aligns with our needs.
+      We are currently evaluating the changes in version 4, specifically
+      regarding  the updated pricing model. Due to these adjustments, we believe
+      it may no  longer be a sustainable option for our use case. As an
+      alternative, we are  exploring CDK to see if it better aligns with our
+      needs.
     link: https://www.serverless.com/
     ring: onHold
     active: true
-    moved: -1
+    moved: 0
   - label: CDK
     description: >
       The <a href="https://aws.amazon.com/de/cdk/">AWS Cloud Development Kit
@@ -177,22 +166,22 @@ entries:
     link: https://aws.amazon.com/de/cdk/
     ring: trial
     active: true
-    moved: 2
+    moved: 0
   - label: ECS
     description: >
       Amazon Elastic Container Service (ECS) is a fully managed container
       orchestration service that helps you to more efficiently deploy, manage,
       and scale containerized applications.
-      
+
       Our containerized production workloads were migrated from classic data
-      centers to ECS wherever possible. With ECS we can run our workloads 
-      at scale without bigger changes on the software components. With fargate
-      we have a serverless experience that gives our development teams to space
-      to focus on developing.
+      centers to ECS wherever possible. With ECS we can run our workloads  at
+      scale without bigger changes on the software components. With fargate we
+      have a serverless experience that gives our development teams to space to
+      focus on developing.
     link: https://aws.amazon.com/de/ecs/
     ring: adopt
     active: true
-    moved: 2
+    moved: 0
   - label: Kibana
     description: >
       When combining modern techniques and architecture styles, such as
@@ -206,7 +195,7 @@ entries:
       We use Kibana extensively for our observability needs. It ensures that our
       applications run smoothly even under high-load scenarios. Kibana helps us
       to find issues with our system fast and react accordingly. Based on its
-      strengths, Kibana has become our default choice for observing our 
+      strengths, Kibana has become our default choice for observing our
       production environments.
     ring: adopt
     active: true
@@ -224,4 +213,82 @@ entries:
       consistent and scalable deployment.
     ring: adopt
     active: true
-    moved: 1
+    moved: 0
+  - label: ValKey
+    description: >
+      <a href="https://valkey.io/">ValKey</a> is an innovative key-value store
+      designed for high performance and seamless integration with modern
+      applications.
+
+      We recommend that teams adopt ValKey instead of Redis. The recent license
+      change with Redis has introduced new restrictions that no longer align
+      with our operational needs, making ValKey the preferred choice moving
+      forward.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: AWS Chatbot
+    description: >
+      <a href="https://aws.amazon.com/de/chatbot/">AWS</a> Chatbot is an
+      interactive service that integrates with chat platforms like Slack and
+      Amazon Chime, enabling teams to receive and respond to AWS notifications
+      and alerts in real time.
+
+      Teams are encouraged to adopt AWS Chatbot as it enhances operational
+      responsiveness by bringing AWS insights directly into your daily
+      communication channels.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: Bref
+    description: >
+      Bref is a framework that enables PHP applications to run on AWS Lambda,
+      streamlining the process of deploying and managing serverless PHP
+      applications.
+
+      Currently, the use of Bref is on hold. Although we have some Lambda
+      functions built with Bref, for any new projects, especially those
+      involving Node.js and TypeScript, those technologies should be preferred
+      to align with our modern development practices.
+    ring: onHold
+    active: true
+    moved: -1
+  - label: Google Gemini
+    description: >
+      <a href="https://ai.google/">Google Gemini</a> is an advanced generative
+      AI system developed by Google, designed to leverage multimodal
+      capabilities—combining natural language processing, computer vision, and
+      reasoning—to deliver innovative, integrated solutions.
+
+      We are currently assessing Google Gemini to evaluate its potential use
+      cases within our projects, ensuring it aligns with our strategic goals and
+      enhances our technology stack.
+    ring: assess
+    active: true
+    moved: 2
+  - label: Github Copilot
+    description: >
+      <a href="https://copilot.github.com/">GitHub Copilot</a> is an AI-powered
+      code completion tool that assists developers by providing context-aware
+      code suggestions and autocompletions, helping to accelerate coding and
+      reduce routine work.
+
+      We are currently assessing GitHub Copilot to evaluate its potential to
+      enhance our development workflows and improve overall productivity through
+      smarter, context-driven coding support.
+    ring: assess
+    active: true
+    moved: 2
+  - label: JetBrains AI Assistant
+    description: >
+      <a href="https://www.jetbrains.com/ai-assistant/">JetBrains AI
+      Assistant</a> is an AI-powered tool designed to integrate with JetBrains
+      IDEs, offering context-aware code suggestions, refactoring support, and
+      productivity enhancements to streamline the development process.
+
+      We are currently assessing JetBrains AI Assistant to determine its
+      potential use cases and benefits within our workflows, ensuring it aligns
+      with our productivity goals and development practices.
+    ring: assess
+    active: true
+    moved: 2

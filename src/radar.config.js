@@ -3,7 +3,7 @@ import { quadrants, entries } from './quadrants';
 
 radar_visualization({
   svg_id: 'radar',
-  title: 'Reservix Tech Radar — 2024 Q4',
+  title: 'Reservix Tech Radar — 2025 Q2',
   /**
    * Don't change these numbers, we make the
    * radar responsive via CSS

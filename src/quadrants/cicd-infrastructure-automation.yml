@@ -25,17 +25,77 @@ entries:
     ring: adopt
     active: true
     moved: 0
-  - label: GitHub Actions
+  - label: Blackfire
     description: >
-      <a href="https://github.com/features/actions">GitHub Actions</a> is a
-      feature that enables automation of tasks and workflows directly within
-      GitLab, similar to GitHub Actions. It allows developers to define custom
-      workflows, automate processes, and integrate seamlessly with their
-      existing CI/CD pipelines, enhancing productivity and collaboration.
+      <a href="https://www.blackfire.io/">Blackfire</a> is a powerful
+      performance profiling and monitoring tool that offers deep insights into
+      your application's execution. It helps developers identify performance
+      bottlenecks, optimize resource usage, and ensure efficient code execution,
+      making it an essential tool for performance management.
 
-      Projects, especially the open source ones, that are hosted on GitHub
-      should make use of Github Actions to ensure that the projects meet our
-      quality standards.
+      Teams are encouraged to adopt Blackfire, especially when fine-tuning
+      application performance is a priority or when preparing for increased
+      load. Its seamless integration into development workflows makes it ideal
+      for both continuous performance monitoring and proactive optimization.
     ring: adopt
     active: true
-    moved: 0
+    moved: 2
+  - label: Dependency-Track
+    description: >
+      <a href="https://dependencytrack.org">Dependency-Track</a> is a robust,
+      open-source software composition analysis tool that continuously monitors
+      and analyzes third-party components in your applications to identify and
+      manage vulnerabilities and compliance risks.
+
+      Teams should adopt Dependency-Track as it provides critical insights into
+      the security and integrity of software dependencies, enabling proactive
+      risk management and ensuring that security and compliance standards are
+      consistently met.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: Renovate
+    description: >
+      <a href="https://renovatebot.com">Renovate</a> is an open-source tool that
+      automates the process of dependency updates by continuously scanning your
+      repositories and creating pull requests for outdated packages. This
+      streamlines maintenance and ensures that projects remain secure and
+      up-to-date.
+
+      Teams are encouraged to adopt Renovate because it significantly reduces
+      manual effort, minimizes technical debt, and helps maintain code security
+      by automating dependency management.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: Open Telemetry
+    description: >
+      <a href="https://opentelemetry.io">OpenTelemetry</a> is an open-source
+      framework that standardizes the collection and correlation of metrics,
+      logs, and traces across distributed systems, enabling better observability
+      and performance monitoring.
+
+      OpenTelemetry is currently in a trial phase as we assess its capability to
+      streamline our monitoring and diagnostics. Its potential to provide a
+      unified view of system performance makes it a promising tool for our
+      observability needs.
+
+      Teams interested in exploring its benefits are encouraged to reach out to
+      Team ArCo for further information and trial participation.
+    ring: trial
+    active: true
+    moved: 2
+  - label: Web Components
+    description: >
+      <a href="https://www.webcomponents.org">Web Components</a> are a set of
+      standardized web platform APIs that enable developers to create
+      encapsulated, reusable custom HTML elements, fostering modularity and
+      maintainability in web development.
+
+      The adoption of Web Components is currently on hold as we reassess their
+      integration within our ecosystem. Due to compatibility and integration
+      concerns with our existing frameworks, teams are advised not to use them
+      at this time.
+    ring: trial
+    active: true
+    moved: 2

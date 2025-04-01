@@ -10,6 +10,12 @@ entries:
       We are using PHP because it offers robust community support, extensive
       libraries, and seamless integration with various databases. It is our
       primary language for backend development.
+
+      PHP is currently not recommended for serverless contexts. Consequently,
+      the use of Bref is on hold. For new serverless projects—especially those
+      involving Lambda functions—teams should consider adopting Node.js and
+      TypeScript, which offer improved performance and a more robust development
+      ecosystem.
     ring: adopt
     active: true
     moved: 0
@@ -60,21 +66,6 @@ entries:
     ring: onHold
     active: true
     moved: 0
-  - label: jQuery
-    description: >
-      <a href="https://jquery.com/">jQuery</a> is a lightweight JavaScript
-      library that simplifies HTML document manipulation, event handling, and
-      animation with an easy-to-use API. It was widely popular for making
-      cross-browser development easier, though its use has declined with the
-      rise of modern frameworks like React.
-
-      React has become our go-to choice for building UIs, particularly when
-      paired with Marigold. We are not using jQuery for new developments, and
-      whenever we modify, add, or change existing JavaScript code, it should be
-      considered for refactoring to React.
-    ring: onHold
-    active: true
-    moved: 0
   - label: React
     description: >
       <a href="https://react.dev/">React</a> is a popular JavaScript library for
@@ -102,7 +93,7 @@ entries:
       and Marigold for developing new features or apps.
     ring: onHold
     active: true
-    moved: -1
+    moved: 0
   - label: C#
     description: >
       <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a> is a
@@ -111,12 +102,10 @@ entries:
       desktop.
 
       We use C# for specific scenarios where hardware integration is required,
-      such as ticket  scanner software. However, we prefer to focus on PHP as
-      our primary backend language  to maintain consistency and efficiency
-      across our projects.
-    ring: onHold
+      such as ticket  scanner software.
+    ring: adopt
     active: true
-    moved: -1
+    moved: 1
   - label: Java
     description: >
       <a href="https://www.java.com/">Java</a> is a robust, object-oriented
@@ -132,18 +121,6 @@ entries:
     active: true
     ring: trial
     moved: 0
-  - label: Zend
-    description: >
-      <a href="https://framework.zend.com/">Zend Framework</a> is a collection
-      of professional PHP packages. It can be used to develop web applications
-      and services using PHP 5.6+, and provides 100% object-oriented code using
-      a broad spectrum of language features.
-
-      Our teams switched or are using Symfony to build our applications and thus
-      the later should be preferred for projects.
-    ring: onHold
-    active: true
-    moved: 0
   - label: Marigold
     description: >
       <a href="https://marigold-ui.io/">Marigold</a> is a React implementation
@@ -158,7 +135,7 @@ entries:
       essential for ensuring  accessible and consistent user interfaces.
     ring: adopt
     active: true
-    moved: 1
+    moved: 0
   - label: Next.js
     description: >
       <a href="https://nextjs.org/">Next.js</a> is a robust React framework
@@ -187,8 +164,6 @@ entries:
       is no good support for TypeScript. And worst of it all, Epxress is not
       actively maintained. An attempt to realse a new major version was started
       over 7 years ago.
-
-      Thus we highly recommend new projects to use alternatives, like Fastify.
     ring: onHold
     active: false
     moved: 0
@@ -249,7 +224,7 @@ entries:
       TODO
     ring: onHold
     active: true
-    moved: 1
+    moved: 0
   - label: Event-driven
     description: >
       Message-driven system integration provides multiple benefits. One
@@ -263,4 +238,46 @@ entries:
       link).
     ring: adopt
     active: true
-    moved: 1
+    moved: 0
+  - label: Tailwind CSS
+    description: >
+      <a href="https://tailwindcss.com/">Tailwind CSS</a> is a utility-first CSS
+      framework that provides pre-built classes to build custom designs directly
+      in your markup. Its flexible approach accelerates development while
+      maintaining a high degree of customization.
+
+      Teams are encouraged to adopt Tailwind CSS in combination with <a
+      href="https://www.marigold-ui.io/?theme=b2b">Marigold</a> to fully
+      leverage our design system. This integration not only ensures consistency
+      across our products but also offers the flexibility needed to tailor
+      designs to domain-specific requirements.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: .NET MAUI
+    description: >
+      <a href="https://dotnet.microsoft.com/en-us/apps/maui">.NET MAUI
+      (Multi-platform App UI)</a> is a framework that enables the development of
+      native applications for mobile and desktop platforms using C#. It
+      streamlines cross-platform app development by allowing a unified codebase
+      for Android, iOS, Windows, and macOS.
+
+      Teams using C# can adopt .NET MAUI to leverage their existing expertise,
+      reduce development overhead, and efficiently build consistent,
+      high-quality applications across multiple platforms.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: Node.js
+    description: >
+      <a href="https://nodejs.org">Node.js</a> is a powerful, open-source
+      JavaScript runtime built on Chrome's V8 engine, enabling the development
+      of scalable network applications through its event-driven, non-blocking
+      I/O model.
+
+      Teams are encouraged to adopt Node.js, especially as a runtime for
+      Lambdas, to take advantage of its asynchronous capabilities and robust
+      ecosystem for building high-performance serverless applications.
+    ring: adopt
+    active: true
+    moved: 2
