@@ -96,6 +96,6 @@ entries:
       integration within our ecosystem. Due to compatibility and integration
       concerns with our existing frameworks, teams are advised not to use them
       at this time.
-    ring: trial
+    ring: onHold
     active: true
     moved: 2
