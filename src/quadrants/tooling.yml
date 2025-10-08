@@ -301,7 +301,8 @@ entries:
 
       JetBrains AI Assistant is currently on hold as we evaluate alternative AI
       coding tools and assess which solutions best align with our development
-      workflows and productivity goals.
+      workflows and productivity goals. Main driver to put this on hold is the
+      pricing model and token allowance.
     ring: onHold
     active: true
     moved: 2
