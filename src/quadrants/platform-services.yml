@@ -39,15 +39,15 @@ entries:
       illustrated by the number of client libraries available in languages like
       Java, C#, Ruby, and JavaScript.
 
-      In our software products, we utilize Elasticsearch as a search cluster for
-      end users. In other cases, we still maintain custom solutions that  may
-      eventually be migrated to Elasticsearch.
-
-      Elasticsearch also serves as our primary solution for observability, see
-      Kibana for a detailed description.
-    ring: adopt
+      Elasticsearch is currently on hold as we evaluate open-source alternatives
+      like OpenSearch due to recent licensing changes. While Elasticsearch
+      continues to serve as our solution for observability (see Kibana) and
+      search in existing products, we are assessing whether it remains the best
+      fit for our long-term strategy and exploring migration paths to
+      open-source alternatives.
+    ring: onHold
     active: true
-    moved: 0
+    moved: -1
   - label: MongoDB
     description: >
       For problems that fit the document database model, <a
@@ -126,9 +126,9 @@ entries:
       environment. This enables us to offer both employees and end users a
       seamless user experience while ensuring security compliance.
   - label: Kubernetes
-    ring: trial
+    ring: onHold
     active: true
-    moved: 0
+    moved: -1
     description: >
       Kubernetes is an open-source container orchestration system for automating
       software deployment, scaling, and management. Originally designed by
@@ -136,7 +136,10 @@ entries:
       contributors, and the trademark is held by the Cloud Native Computing
       Foundation.
 
-      We currently use it internally only to provide developer tools.
+      Kubernetes is currently on hold as we evaluate its fit within our
+      infrastructure strategy. While it remains in limited internal use for
+      developer tools, we are assessing whether it aligns with our long-term
+      operational needs and cloud-native architecture.
   - label: Serverless
     description: >
       The Serverless Framework is an open-source tool that simplifies the
@@ -253,42 +256,67 @@ entries:
     ring: onHold
     active: true
     moved: -1
-  - label: Google Gemini
+  - label: Sentry
     description: >
-      <a href="https://ai.google/">Google Gemini</a> is an advanced generative
-      AI system developed by Google, designed to leverage multimodal
-      capabilities—combining natural language processing, computer vision, and
-      reasoning—to deliver innovative, integrated solutions.
+      <a href="https://sentry.io/">Sentry</a> is an application monitoring and
+      error tracking platform that helps developers quickly identify and resolve
+      software issues through real-time error monitoring and performance
+      tracking.
 
-      We are currently assessing Google Gemini to evaluate its potential use
-      cases within our projects, ensuring it aligns with our strategic goals and
-      enhances our technology stack.
-    ring: assess
+      We are currently trialing Sentry to evaluate its potential for improving
+      our application monitoring, error tracking, and debugging workflows,
+      helping teams identify and fix issues faster.
+    ring: trial
     active: true
     moved: 2
-  - label: Github Copilot
+  - label: OpenSearch
     description: >
-      <a href="https://copilot.github.com/">GitHub Copilot</a> is an AI-powered
-      code completion tool that assists developers by providing context-aware
-      code suggestions and autocompletions, helping to accelerate coding and
-      reduce routine work.
+      <a href="https://opensearch.org/">OpenSearch</a> is a community-driven,
+      Apache 2.0-licensed open source search and analytics suite that provides
+      advanced security, alerting, SQL support, and automated index management.
 
-      We are currently assessing GitHub Copilot to evaluate its potential to
-      enhance our development workflows and improve overall productivity through
-      smarter, context-driven coding support.
-    ring: assess
+      We are currently trialing OpenSearch as an open-source alternative for
+      search and analytics workloads, particularly as we evaluate options beyond
+      Elasticsearch given recent licensing changes.
+    ring: trial
     active: true
     moved: 2
-  - label: JetBrains AI Assistant
+  - label: Valkey Serverless
     description: >
-      <a href="https://www.jetbrains.com/ai-assistant/">JetBrains AI
-      Assistant</a> is an AI-powered tool designed to integrate with JetBrains
-      IDEs, offering context-aware code suggestions, refactoring support, and
-      productivity enhancements to streamline the development process.
+      <a href="https://aws.amazon.com/elasticache/what-is-valkey/">Valkey
+      Serverless</a> is an open-source, in-memory, high-performance key-value
+      datastore available on AWS ElastiCache, providing a serverless,
+      auto-scaling alternative to Redis with microsecond performance.
 
-      We are currently assessing JetBrains AI Assistant to determine its
-      potential use cases and benefits within our workflows, ensuring it aligns
-      with our productivity goals and development practices.
+      We are currently trialing Valkey Serverless to evaluate its potential as a
+      cost-effective, scalable caching and session store solution, particularly
+      given its open-source nature and seamless AWS integration.
+    ring: trial
+    active: true
+    moved: 2
+  - label: AWS AppSync
+    description: >
+      <a href="https://aws.amazon.com/appsync/">AWS AppSync</a> is a fully
+      managed service that enables developers to create GraphQL APIs by
+      connecting to data sources like DynamoDB, Lambda, and more, with built-in
+      real-time capabilities and robust security features.
+
+      We are currently trialing AWS AppSync to evaluate its potential for
+      building flexible, scalable Websocket APIs with real-time capabilities and
+      simplified data integration across multiple sources.
+    ring: trial
+    active: true
+    moved: 2
+  - label: AWS Bedrock
+    description: >
+      <a href="https://aws.amazon.com/bedrock/">AWS Bedrock</a> is a
+      comprehensive, secure, and flexible service for building generative AI
+      applications and agents, providing access to foundation models, tools for
+      customization, safety guardrails, and cost optimization.
+
+      We are currently assessing AWS Bedrock to evaluate its potential for
+      building and deploying generative AI applications, leveraging foundation
+      models while maintaining security and compliance standards.
     ring: assess
     active: true
     moved: 2

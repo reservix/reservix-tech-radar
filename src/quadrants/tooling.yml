@@ -53,22 +53,10 @@ entries:
       optimize assets such as JavaScript, CSS, and images.
 
       It is not recommended to use Webpack for new projects; instead, more
-      modern bundlers like vite or tsup, which require less configuration and
-      setup, are preferred. If you need to migrate away from Webpack or start a
-      new project, please contact your area architect for support and guidance.
+      modern bundlers like Vite, which require less configuration and setup, are
+      preferred. If you need to migrate away from Webpack or start a new
+      project, please contact your area architect for support and guidance.
     ring: onHold
-    active: true
-    moved: 0
-  - label: tsup
-    description: >
-      <a href="https://tsup.egoist.sh/">tsup</a> is a fast and efficient bundler
-      designed specifically for building TypeScript libraries, offering a
-      streamlined setup with minimal configuration.
-
-      While tsup is recommended for library development in TypeScript, Vite is
-      preferred for building applications due to its superior development
-      experience and performance.
-    ring: adopt
     active: true
     moved: 0
   - label: vite
@@ -167,5 +155,154 @@ entries:
       systems remain responsive and reliable even under demanding load
       conditions.
     ring: adopt
+    active: true
+    moved: 2
+  - label: Product Fruits
+    description: >
+      <a href="https://productfruits.com">Product Fruits</a> is an AI-powered
+      product adoption platform that helps create user onboarding experiences
+      through smart product tours, interactive guides, and personalized
+      assistance.
+
+      Teams are encouraged to adopt Product Fruits to improve user onboarding
+      and reduce support tickets. Its AI-driven approach helps turn confused
+      visitors into confident users by providing contextual guidance and
+      reducing time to activation.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: Google Gemini
+    description: >
+      <a href="https://gemini.google.com">Google Gemini</a> is an advanced
+      generative AI system developed by Google, designed to leverage multimodal
+      capabilities—combining natural language processing, computer vision, and
+      reasoning—to deliver innovative, integrated solutions.
+
+      Teams are encouraged to adopt Google Gemini for AI-powered development
+      tasks, content generation, and problem-solving. Its multimodal
+      capabilities and integration with Google's ecosystem make it a valuable
+      tool for enhancing productivity and innovation.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: GitHub Copilot
+    description: >
+      <a href="https://github.com/features/copilot">GitHub Copilot</a> is an
+      AI-powered code completion tool that assists developers by providing
+      context-aware code suggestions and autocompletions, helping to accelerate
+      coding and reduce routine work.
+
+      We are currently trialing GitHub Copilot to evaluate its potential to
+      enhance our development workflows and improve overall productivity through
+      smarter, context-driven coding support.
+    ring: trial
+    active: true
+    moved: 2
+  - label: Playwright MCP
+    description: >
+      <a href="https://github.com/microsoft/playwright-mcp">Playwright MCP</a>
+      is a Model Context Protocol server that provides browser automation
+      capabilities using Playwright, enabling LLMs to interact with web pages
+      through structured accessibility snapshots.
+
+      We are currently trialing Playwright MCP to evaluate its potential for
+      AI-powered browser automation and testing workflows, providing a fast and
+      deterministic approach to web interaction.
+    ring: trial
+    active: true
+    moved: 2
+  - label: LocalStack
+    description: >
+      <a href="https://www.localstack.cloud/">LocalStack</a> is a cloud
+      development tool that emulates AWS and Snowflake services locally,
+      enabling faster development, testing, and iteration without accessing
+      actual cloud resources.
+
+      We are currently trialing LocalStack to evaluate its potential for
+      improving local development workflows, reducing cloud costs, and enabling
+      faster feedback cycles during development.
+    ring: trial
+    active: true
+    moved: 2
+  - label: Claude Code
+    description: >
+      <a href="https://docs.claude.com/en/docs/claude-code/overview">Claude
+      Code</a> is an agentic coding tool that lives in your terminal, helping
+      turn ideas into code faster by understanding your codebase, editing files
+      directly, running commands, and handling git workflows through natural
+      language.
+
+      We are currently trialing Claude Code to evaluate its potential to enhance
+      developer productivity through AI-powered coding assistance, automated
+      workflows, and intelligent codebase navigation.
+    ring: trial
+    active: true
+    moved: 2
+  - label: vitest
+    description: >
+      <a href="https://vitest.dev/">Vitest</a> is a next generation testing
+      framework powered by Vite, offering a fast, modern testing experience with
+      Jest-compatible APIs, smart watch mode, and out-of-the-box support for
+      TypeScript, JSX, and ESM.
+
+      We are currently trialing Vitest as a modern alternative to Jest,
+      particularly for Vite-based projects. Its native Vite integration and
+      improved performance make it a promising option for testing TypeScript
+      applications.
+    ring: trial
+    active: true
+    moved: 2
+  - label: OpenTofu
+    description: >
+      <a href="https://opentofu.org/">OpenTofu</a> is an open-source,
+      community-driven infrastructure as code tool that serves as a drop-in
+      replacement for Terraform, providing the same workflows while remaining
+      truly open source under the Linux Foundation.
+
+      We are currently assessing OpenTofu as an alternative to Terraform,
+      particularly in light of recent licensing changes. Its commitment to
+      open-source principles and community-driven development makes it a
+      compelling option for infrastructure management.
+    ring: assess
+    active: true
+    moved: 2
+  - label: chrome-dev-tools-mcp
+    description: >
+      <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">Chrome
+      DevTools MCP</a> is a Model Context Protocol server that allows AI coding
+      agents to control and inspect a live Chrome browser, providing performance
+      insights, debugging capabilities, and browser automation.
+
+      We are currently assessing chrome-dev-tools-mcp to evaluate its potential
+      for AI-powered browser debugging, performance analysis, and automated
+      testing workflows.
+    ring: assess
+    active: true
+    moved: 2
+  - label: AWS Q Developer
+    description: >
+      <a href="https://aws.amazon.com/q/developer/">AWS Q Developer</a> is a
+      generative AI-powered assistant for software development that helps build
+      faster by autonomously performing tasks like implementing features,
+      documenting, testing, reviewing, and refactoring code.
+
+      We are currently assessing AWS Q Developer to evaluate its potential for
+      enhancing development workflows, particularly for AWS-based applications
+      and cloud infrastructure tasks.
+    ring: assess
+    active: true
+    moved: 2
+  - label: JetBrains AI Assistant
+    description: >
+      <a href="https://www.jetbrains.com/ai/">JetBrains AI Assistant</a> is an
+      AI-powered tool designed to integrate with JetBrains IDEs, offering
+      context-aware code suggestions, refactoring support, and productivity
+      enhancements.
+
+      JetBrains AI Assistant is currently on hold as we evaluate alternative AI
+      coding tools and assess which solutions best align with our development
+      workflows and productivity goals. Main driver to put this on hold is the
+      pricing model and token allowance.
+    ring: onHold
     active: true
     moved: 2
