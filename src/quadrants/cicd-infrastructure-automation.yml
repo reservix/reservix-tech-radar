@@ -75,13 +75,11 @@ entries:
       logs, and traces across distributed systems, enabling better observability
       and performance monitoring.
 
-      OpenTelemetry is currently in a trial phase as we assess its capability to
-      streamline our monitoring and diagnostics. Its potential to provide a
-      unified view of system performance makes it a promising tool for our
-      observability needs.
-
-      Teams interested in exploring its benefits are encouraged to reach out to
-      Team ArCo for further information and trial participation.
-    ring: trial
+      After a successful trial phase, OpenTelemetry has proven its capability to
+      streamline our monitoring and diagnostics. Teams are encouraged to adopt
+      OpenTelemetry for unified observability across distributed systems,
+      providing comprehensive insights into system performance, metrics, logs,
+      and traces.
+    ring: adopt
     active: true
-    moved: 2
+    moved: 1

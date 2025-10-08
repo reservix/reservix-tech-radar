@@ -167,23 +167,6 @@ entries:
     ring: onHold
     active: false
     moved: 0
-  - label: Fastify
-    description: >
-      <a href="https://www.fastify.io/">Fastify</a> is inspired by Hapi and
-      Express and provides a faster alternative to Express with less overhead.
-      It is built as a general-purpose web framework, but it shines when it
-      comes to its fast HTTP APIs. It offers ease in handling request-response
-      validations, support for TypeScript and a plugin ecosystem giving  teams
-      an easier experience developing software.
-
-      Unlike Express, Fastify's core is implemented with asynchronous code,
-      which not only leads to a better developer experience but also to less
-      memory leaks, a problem often times associated with Express. Besides that
-      Fastify comes with a much better performance than Express. Thus we
-      recommend to assess Fastify for new projects.
-    ring: assess
-    active: false
-    moved: 0
   - label: GraalVM
     description: >
       <a href="https://www.graalvm.org/">GraalVM</a> is a high-performance
@@ -293,5 +276,45 @@ entries:
       concerns with our existing frameworks, teams are advised not to use them
       at this time.
     ring: onHold
+    active: true
+    moved: 2
+  - label: PHPUnit
+    description: >
+      <a href="https://phpunit.de/">PHPUnit</a> is a programmer-oriented testing
+      framework for PHP that implements the xUnit architecture for unit testing,
+      providing comprehensive tools for automated testing of PHP applications.
+
+      Teams are encouraged to adopt PHPUnit as the standard testing framework
+      for PHP projects. Its robust feature set, wide adoption, and excellent
+      integration with PHP development tools make it essential for ensuring code
+      quality and reliability in our PHP-based applications.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: PHPStan
+    description: >
+      <a href="https://phpstan.org/">PHPStan</a> is an open-source static
+      analysis tool for PHP that finds bugs in your code without writing tests,
+      scanning entire codebases to identify potential issues before deployment.
+
+      Teams are encouraged to adopt PHPStan to improve code quality and prevent
+      bugs from reaching production. Its ability to catch errors during
+      development, support for gradual integration, and compatibility with major
+      PHP frameworks make it a valuable addition to our development workflow.
+    ring: adopt
+    active: true
+    moved: 2
+  - label: SonarQube
+    description: >
+      <a href="https://www.sonarsource.com/products/sonarqube/">SonarQube</a> is
+      an industry-standard automated code review and static analysis tool that
+      detects coding issues, security vulnerabilities, and code smells across
+      30+ languages, frameworks, and IaC platforms.
+
+      We are currently trialing SonarQube to evaluate its potential for
+      improving code quality, security, and maintainability across our projects.
+      Its comprehensive analysis capabilities and actionable insights make it a
+      promising tool for enhancing our development standards.
+    ring: trial
     active: true
     moved: 2
