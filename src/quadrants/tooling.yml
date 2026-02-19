@@ -205,12 +205,12 @@ entries:
       capabilities using Playwright, enabling LLMs to interact with web pages
       through structured accessibility snapshots.
 
-      We are currently trialing Playwright MCP to evaluate its potential for
-      AI-powered browser automation and testing workflows, providing a fast and
-      deterministic approach to web interaction.
-    ring: trial
+      We are found Playwright MCP pretty helpful for AI-powered browser
+      automation and testing workflows, providing a fast and deterministic
+      approach to web interaction.
+    ring: adopt
     active: true
-    moved: 2
+    moved: 0
   - label: LocalStack
     description: >
       <a href="https://www.localstack.cloud/">LocalStack</a> is a cloud
@@ -218,12 +218,13 @@ entries:
       enabling faster development, testing, and iteration without accessing
       actual cloud resources.
 
-      We are currently trialing LocalStack to evaluate its potential for
-      improving local development workflows, reducing cloud costs, and enabling
-      faster feedback cycles during development.
-    ring: trial
+      We are betting on LocalStack as part for our local development workflows,
+      reducing cloud costs, and enabling faster feedback cycles during
+      development. It also became the replacement for local S3 storage, formerly
+      MinIO
+    ring: adopt
     active: true
-    moved: 2
+    moved: 0
   - label: Claude Code
     description: >
       <a href="https://docs.claude.com/en/docs/claude-code/overview">Claude
@@ -232,12 +233,13 @@ entries:
       directly, running commands, and handling git workflows through natural
       language.
 
-      We are currently trialing Claude Code to evaluate its potential to enhance
-      developer productivity through AI-powered coding assistance, automated
-      workflows, and intelligent codebase navigation.
-    ring: trial
+      It's where the innovation happens. Claude Code is at the forefront of
+      AI-assisted development.  Rather than spreading our bets across multiple
+      tools,  we're backing the one that consistently pushes the boundary of
+      what's possible.
+    ring: adopt
     active: true
-    moved: 2
+    moved: 0
   - label: vitest
     description: >
       <a href="https://vitest.dev/">Vitest</a> is a next generation testing
@@ -289,9 +291,9 @@ entries:
       We are currently assessing AWS Q Developer to evaluate its potential for
       enhancing development workflows, particularly for AWS-based applications
       and cloud infrastructure tasks.
-    ring: assess
+    ring: onHold
     active: true
-    moved: 2
+    moved: 4
   - label: JetBrains AI Assistant
     description: >
       <a href="https://www.jetbrains.com/ai/">JetBrains AI Assistant</a> is an
@@ -306,3 +308,15 @@ entries:
     ring: onHold
     active: true
     moved: 2
+  - label: AWS Agent Plugin
+    description: >
+      <a href="https://github.com/awslabs/agent-plugins/tree/main">AWS Agents
+      Plugin</a>  equip AI coding agents with the skills to help you architect,
+      deploy, and operate on AWS
+
+      It helps the agent to recommend better AWS architectures and services,
+      estimating costs,  generating Infrastructure as Code (CDK or
+      CloudFormation), and guiding you through deployment.
+    ring: assess
+    active: true
+    moved: 0
