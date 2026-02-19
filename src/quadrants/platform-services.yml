@@ -290,14 +290,15 @@ entries:
     moved: 2
   - label: AWS AppSync Events
     description: >
-      <a href="https://aws.amazon.com/appsync/">AWS AppSync Events</a> is a fully
-      managed service that enables developers to create GraphQL APIs by
+      <a href="https://aws.amazon.com/appsync/">AWS AppSync Events</a> is a
+      fully managed service that enables developers to create GraphQL APIs by
       connecting to data sources like DynamoDB, Lambda, and more, with built-in
       real-time capabilities and robust security features.
 
-      We are using AWS AppSync Events with success on production workload and see its
-      potential for building flexible, scalable Websocket APIs with real-time
-      capabilities and simplified data integration across multiple sources.
+      We are using AWS AppSync Events with success on production workload and
+      see its potential for building flexible, scalable Websocket APIs with
+      real-time capabilities and simplified data integration across multiple
+      sources.
     ring: adopt
     active: true
     moved: 1
