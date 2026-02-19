@@ -62,24 +62,18 @@ entries:
     active: true
     moved: 0
   - label: DynamoDB
-    ring: assess
+    description: >
+      <a href="https://aws.amazon.com/dynamodb/">AWS Lambda</a> is a serverless
+    ring: adopt
     active: true
-    moved: 0
+    moved: 1
   - label: AWS Lambda
     description: >
-      <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> is a serverless
-      compute service that runs your code in response to events and
-      automatically manages the underlying compute resources for you. These
-      events may include changes in state or an update, such as a user placing
-      an item in a shopping cart on an ecommerce website.
+      <a href="https://aws.amazon.com/lambda/">AWS DynamoDB</a> is a serverless,
+      fully managed, distributed NoSQL database with single-digit millisecond
+      performance at any scale
 
-      For stateless services, this means you don’t need to worry about running
-      any long-lived machines, potentially reducing costs and improving
-      security. Despite other forays into the PaaS space by AWS, Lambda looks
-      the closest to getting this right.
-
-      Our teams continue to enjoy using AWS Lambda and are beginning to use it
-      for serverless architectures which are built for the future.
+      We already use it successfully in some of our production workloads.
     ring: adopt
     active: true
     moved: 0
@@ -288,10 +282,10 @@ entries:
       datastore available on AWS ElastiCache, providing a serverless,
       auto-scaling alternative to Redis with microsecond performance.
 
-      We are currently trialing Valkey Serverless to evaluate its potential as a
-      cost-effective, scalable caching and session store solution, particularly
-      given its open-source nature and seamless AWS integration.
-    ring: trial
+      We saw Valkey Serverless as a cost-effective, scalable caching and session
+      store solution for our ephemeral,  non-production workloads, but also use
+      it in production for some use cases.
+    ring: adopt
     active: true
     moved: 2
   - label: AWS AppSync
@@ -301,12 +295,12 @@ entries:
       connecting to data sources like DynamoDB, Lambda, and more, with built-in
       real-time capabilities and robust security features.
 
-      We are currently trialing AWS AppSync to evaluate its potential for
-      building flexible, scalable Websocket APIs with real-time capabilities and
-      simplified data integration across multiple sources.
-    ring: trial
+      We are using AWS AppSync with success on production workload and see its
+      potential for building flexible, scalable Websocket APIs with real-time
+      capabilities and simplified data integration across multiple sources.
+    ring: adopt
     active: true
-    moved: 2
+    moved: 1
   - label: AWS Bedrock
     description: >
       <a href="https://aws.amazon.com/bedrock/">AWS Bedrock</a> is a
@@ -314,9 +308,10 @@ entries:
       applications and agents, providing access to foundation models, tools for
       customization, safety guardrails, and cost optimization.
 
-      We are currently assessing AWS Bedrock to evaluate its potential for
-      building and deploying generative AI applications, leveraging foundation
-      models while maintaining security and compliance standards.
-    ring: assess
+      We are currently implement first services using AWS Bedrock to evaluate
+      its potential for building and deploying generative AI applications,
+      leveraging foundation models while maintaining security and compliance
+      standards.
+    ring: trial
     active: true
-    moved: 2
+    moved: 1
