@@ -288,14 +288,14 @@ entries:
     ring: adopt
     active: true
     moved: 2
-  - label: AWS AppSync
+  - label: AWS AppSync Events
     description: >
-      <a href="https://aws.amazon.com/appsync/">AWS AppSync</a> is a fully
+      <a href="https://aws.amazon.com/appsync/">AWS AppSync Events</a> is a fully
       managed service that enables developers to create GraphQL APIs by
       connecting to data sources like DynamoDB, Lambda, and more, with built-in
       real-time capabilities and robust security features.
 
-      We are using AWS AppSync with success on production workload and see its
+      We are using AWS AppSync Events with success on production workload and see its
       potential for building flexible, scalable Websocket APIs with real-time
       capabilities and simplified data integration across multiple sources.
     ring: adopt
