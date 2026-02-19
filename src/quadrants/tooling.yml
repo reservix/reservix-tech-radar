@@ -192,10 +192,9 @@ entries:
       context-aware code suggestions and autocompletions, helping to accelerate
       coding and reduce routine work.
 
-      We are currently trialing GitHub Copilot to evaluate its potential to
-      enhance our development workflows and improve overall productivity through
-      smarter, context-driven coding support.
-    ring: trial
+      We decided to hold off on adopting GitHub Copilot for now due to the
+      decision to move towards Claude Code.
+    ring: onHold
     active: true
     moved: 2
   - label: Playwright MCP
