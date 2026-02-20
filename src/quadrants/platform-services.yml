@@ -63,17 +63,21 @@ entries:
     moved: 0
   - label: DynamoDB
     description: >
-      <a href="https://aws.amazon.com/dynamodb/">AWS Lambda</a> is a serverless
+      <a href="https://aws.amazon.com/dynamodb/">AWS DynamoDB</a> is a
+      serverless, fully managed, distributed NoSQL database with single-digit
+      millisecond performance at any scale
+
+      We already use it successfully in some of our production workloads.
     ring: adopt
     active: true
     moved: 1
   - label: AWS Lambda
     description: >
-      <a href="https://aws.amazon.com/lambda/">AWS DynamoDB</a> is a serverless,
-      fully managed, distributed NoSQL database with single-digit millisecond
-      performance at any scale
-
-      We already use it successfully in some of our production workloads.
+      <a href="https://aws.amazon.com/lambda/">AWS  Lambda</a> is a serverless,
+      compute service that runs your code in response to events and
+      automatically manages the underlying compute resources for you. These
+      events may include changes in state or an update, such as a user placing
+      an item in a shopping cart on an ecommerce website.
     ring: adopt
     active: true
     moved: 0
