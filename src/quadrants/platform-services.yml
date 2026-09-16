@@ -256,14 +256,21 @@ entries:
     moved: -1
   - label: Sentry
     description: >
-      <a href="https://sentry.io/">Sentry</a> is an application monitoring and
-      error tracking platform that helps developers quickly identify and resolve
-      software issues through real-time error monitoring and performance
-      tracking.
+      <a href="https://sentry.io/">Sentry</a> is an application monitoring
+      platform with a strong focus on exceptions. Its <a
+      href="https://docs.sentry.io/platforms/javascript/">JavaScript browser
+      SDK</a> reports uncaught exceptions and unhandled rejections with readable
+      stack traces via source maps, and adds performance tracing including Web
+      Vitals as well as Session Replay to reproduce what the user saw before,
+      during, and after a problem.
 
-      We are currently trialing Sentry to evaluate its potential for improving
-      our application monitoring, error tracking, and debugging workflows,
-      helping teams identify and fix issues faster.
+      We are trialing Sentry for client-side JavaScript in the browser. Real
+      User Monitoring as such is nothing new to us — our Elastic stack covers
+      that too. What we are after are exceptions: Sentry groups events by
+      fingerprint into issues instead of a flood of single errors, provides a
+      triage workflow with regression and escalation detection, and points at
+      the suspect commit behind a stack trace. That is where we expect it to
+      beat our current setup.
     ring: trial
     active: true
     moved: 2
